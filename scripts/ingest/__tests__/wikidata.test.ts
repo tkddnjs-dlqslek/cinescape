@@ -8,6 +8,7 @@ describe("buildSparql", () => {
     expect(q).toContain("398818");
     expect(q).toContain("P915");
     expect(q).toContain("P625");
+    expect(q).toContain("P4947");
   });
 });
 

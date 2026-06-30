@@ -9,7 +9,8 @@ SELECT ?placeLabel ?coord WHERE {
   ?film wdt:P915 ?place .
   ?place wdt:P625 ?coord .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,it,fr,ko". }
-}`.trim();
+}
+LIMIT 100`.trim();
 }
 
 export function parseWikidata(json: unknown): RawLocation[] {
@@ -46,7 +47,7 @@ export function makeWikidataFetcher(
           "User-Agent": "CinescapeIngest/1.0 (https://github.com/tkddnjs-dlqslek/cinescape)",
         },
       });
-      if (!res.ok) throw new Error(`Wikidata ${res.status}`);
+      if (!res.ok) throw new Error(`Wikidata ${res.status} ${res.statusText}: ${url}`);
       return parseWikidata(await res.json());
     },
   };
