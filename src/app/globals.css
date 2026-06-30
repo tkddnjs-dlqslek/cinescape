@@ -1,0 +1,13 @@
+:root {
+  --bg0: #05060d; --bg1: #0b1024; --ink: #eaf0ff; --muted: #8a93b8;
+  --accent: #7cc7ff; --violet: #b69cff;
+  --glass: rgba(255, 255, 255, 0.06); --line: rgba(255, 255, 255, 0.12);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  background: linear-gradient(160deg, var(--bg0), var(--bg1));
+  color: var(--ink);
+  font-family: Inter, system-ui, sans-serif;
+  overflow: hidden;
+}
