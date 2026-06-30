@@ -30,4 +30,22 @@ describe("parseFilms", () => {
     delete (bad[0] as Record<string, unknown>).title;
     expect(() => parseFilms(bad)).toThrow();
   });
+
+  it("rejects a scene with an invalid stillUrl", () => {
+    const bad = structuredClone(valid);
+    bad[0].scenes[0].stillUrl = "not-a-url";
+    expect(() => parseFilms(bad)).toThrow();
+  });
+
+  it("rejects a scene with bearing out of range", () => {
+    const bad = structuredClone(valid);
+    bad[0].scenes[0].bearing = 400;
+    expect(() => parseFilms(bad)).toThrow();
+  });
+
+  it("rejects a coordinate with longitude out of range", () => {
+    const bad = structuredClone(valid);
+    bad[0].scenes[0].coord.lng = 200;
+    expect(() => parseFilms(bad)).toThrow();
+  });
 });
