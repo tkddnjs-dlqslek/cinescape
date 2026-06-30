@@ -1,3 +1,5 @@
+import { CinescapeApp } from "@/components/CinescapeApp";
+
 export default function Home() {
-  return <main aria-label="cinescape-root">CINESCAPE</main>;
+  return <CinescapeApp />;
 }
