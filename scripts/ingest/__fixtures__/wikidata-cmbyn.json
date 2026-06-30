@@ -1,0 +1,9 @@
+{
+  "results": {
+    "bindings": [
+      { "placeLabel": { "value": "Crema" }, "coord": { "value": "Point(9.6859 45.3628)" } },
+      { "placeLabel": { "value": "Crema" }, "coord": { "value": "Point(9.6859 45.3628)" } },
+      { "placeLabel": { "value": "Bergamo" }, "coord": { "value": "Point(9.6614 45.7038)" } }
+    ]
+  }
+}
