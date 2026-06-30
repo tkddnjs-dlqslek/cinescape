@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "ingest": "tsx scripts/ingest/run.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "0.39.0",
     "next": "15.1.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "6.6.3",
+    "tsx": "4.19.2",
     "@testing-library/react": "16.1.0",
     "@types/node": "22.10.2",
     "@types/react": "19.0.2",
