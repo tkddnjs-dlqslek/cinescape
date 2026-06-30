@@ -14,6 +14,7 @@ export function ThenNowSlider({
   return (
     <div style={{ position: "relative", width: "100%", height: 236, overflow: "hidden" }}>
       <div
+        role="img"
         aria-label={`${alt} — 영화 장면`}
         style={{
           position: "absolute", inset: 0,
@@ -21,6 +22,7 @@ export function ThenNowSlider({
         }}
       />
       <div
+        role="img"
         aria-label={`${alt} — 현재`}
         style={{
           position: "absolute", inset: 0,
@@ -51,7 +53,7 @@ function tagStyle(side: "left" | "right"): React.CSSProperties {
   return {
     position: "absolute", bottom: 12, [side]: 12,
     fontSize: 10, letterSpacing: ".14em", textTransform: "uppercase",
-    background: "rgba(5,6,13,.6)", border: "1px solid var(--line)",
+    background: "var(--surface-dark)", border: "1px solid var(--line)",
     padding: "5px 10px", borderRadius: 8, pointerEvents: "none",
   } as React.CSSProperties;
 }

@@ -2,6 +2,7 @@
   --bg0: #05060d; --bg1: #0b1024; --ink: #eaf0ff; --muted: #8a93b8;
   --accent: #7cc7ff; --violet: #b69cff;
   --glass: rgba(255, 255, 255, 0.06); --line: rgba(255, 255, 255, 0.12);
+  --surface-dark: rgba(5, 6, 13, 0.6);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { height: 100%; }
