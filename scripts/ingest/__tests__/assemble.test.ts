@@ -34,4 +34,44 @@ describe("assembleFilm", () => {
   it("throws (via parseFilms) when no valid scenes exist", () => {
     expect(() => assembleFilm(meta, [], [])).toThrow();
   });
+
+  it("ensures unique scene ids on slug collision by appending -2, -3, etc", () => {
+    const collisionLocs: RawLocation[] = [
+      { name: "Piazza", lat: 1, lng: 1 },
+      { name: "Piazza", lat: 2, lng: 2 },
+    ];
+    const collisionTags: TaggedScene[] = [
+      { name: "Piazza A", note: "first", bearing: 0 },
+      { name: "Piazza B", note: "second", bearing: 45 },
+    ];
+    const film = assembleFilm(meta, collisionLocs, collisionTags);
+    expect(film.scenes).toHaveLength(2);
+    expect(film.scenes[0].id).toBe("call-me-by-your-name-piazza");
+    expect(film.scenes[1].id).toBe("call-me-by-your-name-piazza-2");
+  });
+
+  it("uses placeholder still URL when stillUrls is empty", () => {
+    const emptyStillMeta: FilmMeta = {
+      title: "Test Film", year: 2020, director: "Test", tmdbId: 1, stillUrls: [],
+    };
+    const film = assembleFilm(emptyStillMeta, locs, tags);
+    expect(film.scenes[0].stillUrl).toMatch(/^https:\/\//);
+    expect(film.scenes[0].stillUrl).toContain("picsum.photos");
+    expect(film.scenes[0].nowUrl).toBe(film.scenes[0].stillUrl);
+  });
+
+  it("sets nowUrl equal to stillUrl for all scenes", () => {
+    const film = assembleFilm(meta, locs, tags);
+    film.scenes.forEach((scene) => {
+      expect(scene.nowUrl).toBe(scene.stillUrl);
+    });
+  });
+
+  it("falls back to empty note and zero bearing when tags are missing", () => {
+    const film = assembleFilm(meta, locs, []);
+    expect(film.scenes[0].note).toBe("");
+    expect(film.scenes[0].bearing).toBe(0);
+    expect(film.scenes[1].note).toBe("");
+    expect(film.scenes[1].bearing).toBe(0);
+  });
 });
