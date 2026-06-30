@@ -8,16 +8,16 @@ export function ScenePanel({ film, scene }: { film: Film; scene: Scene }) {
     <aside
       style={{
         position: "fixed", right: 40, top: 104, width: 400, borderRadius: 22, zIndex: 35, overflow: "hidden",
-        background: "linear-gradient(180deg, rgba(20,28,60,.72), rgba(10,15,38,.78))",
+        background: "var(--panel-bg)",
         border: "1px solid var(--line)", backdropFilter: "blur(26px)",
-        boxShadow: "0 40px 90px rgba(0,0,0,.6)",
+        boxShadow: "var(--shadow-panel)",
       }}
     >
       <div style={{ padding: "22px 24px 16px" }}>
         <span
           style={{
             display: "inline-block", fontSize: 10.5, letterSpacing: ".12em", color: "var(--accent)",
-            background: "rgba(124,199,255,.12)", border: "1px solid rgba(124,199,255,.25)",
+            background: "var(--accent-subtle-bg)", border: "1px solid var(--accent-subtle-border)",
             padding: "5px 11px", borderRadius: 20, textTransform: "uppercase",
           }}
         >
@@ -26,7 +26,7 @@ export function ScenePanel({ film, scene }: { film: Film; scene: Scene }) {
         <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 38, lineHeight: 1, margin: "14px 0 6px" }}>
           {film.title}
         </h2>
-        <p style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic", fontSize: 18, color: "#cbd6ff", marginTop: 14 }}>
+        <p style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic", fontSize: 18, color: "var(--text-secondary)", marginTop: 14 }}>
           {scene.note}
         </p>
       </div>

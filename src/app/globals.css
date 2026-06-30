@@ -3,6 +3,11 @@
   --accent: #7cc7ff; --violet: #b69cff;
   --glass: rgba(255, 255, 255, 0.06); --line: rgba(255, 255, 255, 0.12);
   --surface-dark: rgba(5, 6, 13, 0.6); --surface-deep: rgba(10, 15, 38, 0.92);
+  --panel-bg: linear-gradient(180deg, rgba(20, 28, 60, 0.72), rgba(10, 15, 38, 0.78));
+  --shadow-panel: 0 40px 90px rgba(0, 0, 0, 0.6);
+  --accent-subtle-bg: rgba(124, 199, 255, 0.12);
+  --accent-subtle-border: rgba(124, 199, 255, 0.25);
+  --text-secondary: #cbd6ff;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { height: 100%; }
