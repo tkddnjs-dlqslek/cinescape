@@ -13,7 +13,7 @@ export function GlobeView({
 }: {
   points: GlobePoint[];
   focus: { lat: number; lng: number } | null;
-  onPointClick: (filmId: string) => void;
+  onPointClick: (filmId: string, sceneId: string) => void;
 }) {
   // react-globe.gl exposes an imperative API via ref.
   const globeRef = useRef<{ pointOfView: (c: object, ms?: number) => void } | null>(null);
@@ -29,7 +29,7 @@ export function GlobeView({
       // @ts-expect-error react-globe.gl ref typing is loose
       ref={globeRef}
       backgroundColor="rgba(0,0,0,0)"
-      globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+      globeImageUrl="/earth-night.jpg"
       pointsData={points}
       pointLat={(d: object) => (d as GlobePoint).lat}
       pointLng={(d: object) => (d as GlobePoint).lng}
@@ -37,7 +37,7 @@ export function GlobeView({
       pointColor={(d: object) => ((d as GlobePoint).active ? "#ffffff" : "#7cc7ff")}
       pointAltitude={(d: object) => ((d as GlobePoint).active ? 0.08 : 0.04)}
       pointRadius={(d: object) => ((d as GlobePoint).active ? 0.5 : 0.32)}
-      onPointClick={(d: object) => onPointClick((d as GlobePoint).filmId)}
+      onPointClick={(d: object) => onPointClick((d as GlobePoint).filmId, (d as GlobePoint).id)}
     />
   );
 }

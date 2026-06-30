@@ -14,6 +14,6 @@ html, body { height: 100%; }
 body {
   background: linear-gradient(160deg, var(--bg0), var(--bg1));
   color: var(--ink);
-  font-family: Inter, system-ui, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
   overflow: hidden;
 }

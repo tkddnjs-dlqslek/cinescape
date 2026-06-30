@@ -23,10 +23,10 @@ export function ScenePanel({ film, scene }: { film: Film; scene: Scene }) {
         >
           {film.director} · {film.year}
         </span>
-        <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 38, lineHeight: 1, margin: "14px 0 6px" }}>
+        <h2 style={{ fontFamily: "var(--font-serif), serif", fontSize: 38, lineHeight: 1, margin: "14px 0 6px" }}>
           {film.title}
         </h2>
-        <p style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic", fontSize: 18, color: "var(--text-secondary)", marginTop: 14 }}>
+        <p style={{ fontFamily: "var(--font-serif), serif", fontStyle: "italic", fontSize: 18, color: "var(--text-secondary)", marginTop: 14 }}>
           {scene.note}
         </p>
       </div>

@@ -10,6 +10,7 @@ export function CinescapeApp() {
   const films = useMemo(() => getFilms(), []);
   const allScenes = useMemo(() => getAllScenes(), []);
   const [selectedFilmId, setSelectedFilmId] = useState<string | null>(null);
+  const [selectedSceneId, setSelectedSceneId] = useState<string | null>(null);
 
   const points = useMemo(
     () => scenesToPoints(allScenes, selectedFilmId),
@@ -17,12 +18,21 @@ export function CinescapeApp() {
   );
 
   const selectedFilm = selectedFilmId ? getFilmById(selectedFilmId) : undefined;
-  const firstScene = selectedFilm?.scenes[0] ?? null;
-  const focus = firstScene ? { lat: firstScene.coord.lat, lng: firstScene.coord.lng } : null;
+  const selectedScene = selectedFilm
+    ? (selectedFilm.scenes.find((s) => s.id === selectedSceneId) ?? selectedFilm.scenes[0])
+    : null;
+  const focus = selectedScene ? { lat: selectedScene.coord.lat, lng: selectedScene.coord.lng } : null;
 
   return (
     <main style={{ position: "fixed", inset: 0 }}>
-      <GlobeView points={points} focus={focus} onPointClick={setSelectedFilmId} />
+      <GlobeView
+        points={points}
+        focus={focus}
+        onPointClick={(filmId, sceneId) => {
+          setSelectedFilmId(filmId);
+          setSelectedSceneId(sceneId);
+        }}
+      />
 
       <header
         style={{
@@ -34,11 +44,17 @@ export function CinescapeApp() {
         <div style={{ fontSize: 18, fontWeight: 700, letterSpacing: ".18em" }}>
           CINE<span style={{ color: "var(--accent)" }}>SCAPE</span>
         </div>
-        <SearchBar films={films} onSelect={(f) => setSelectedFilmId(f.id)} />
+        <SearchBar
+          films={films}
+          onSelect={(f) => {
+            setSelectedFilmId(f.id);
+            setSelectedSceneId(f.scenes[0].id);
+          }}
+        />
       </header>
 
-      {selectedFilm && firstScene && (
-        <ScenePanel film={selectedFilm} scene={firstScene} />
+      {selectedFilm && selectedScene && (
+        <ScenePanel film={selectedFilm} scene={selectedScene} />
       )}
     </main>
   );
