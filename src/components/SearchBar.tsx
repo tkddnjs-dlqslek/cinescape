@@ -37,7 +37,7 @@ export function SearchBar({
           role="listbox"
           style={{
             position: "absolute", top: "calc(100% + 8px)", left: 0, right: 0,
-            listStyle: "none", background: "rgba(10,15,38,.92)", border: "1px solid var(--line)",
+            listStyle: "none", background: "var(--surface-deep)", border: "1px solid var(--line)",
             borderRadius: 12, overflow: "hidden", backdropFilter: "blur(20px)", zIndex: 40,
           }}
         >
