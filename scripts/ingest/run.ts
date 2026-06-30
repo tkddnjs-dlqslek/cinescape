@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, renameSync } from "node:fs";
 import { resolve } from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 import { parseFilms, type Film } from "@/lib/types";
@@ -38,7 +38,12 @@ async function main() {
 
   const tags = [];
   for (const loc of locations) {
-    tags.push(await tagger.tag(meta.title, loc));
+    try {
+      tags.push(await tagger.tag(meta.title, loc));
+    } catch (e) {
+      console.warn(`[ingest] tag failed for "${loc.name}": ${e}`);
+      tags.push({ name: loc.name, note: "", bearing: 0 });
+    }
   }
 
   const film = assembleFilm(meta, locations, tags);
@@ -52,7 +57,9 @@ async function main() {
   const existing: Film[] = parseFilms(JSON.parse(readFileSync(dataPath, "utf8")));
   const merged = mergeFilms(existing, film);
   parseFilms(merged); // final integrity gate
-  writeFileSync(dataPath, JSON.stringify(merged, null, 2) + "\n", "utf8");
+  const tmp = dataPath + ".tmp";
+  writeFileSync(tmp, JSON.stringify(merged, null, 2) + "\n", "utf8");
+  renameSync(tmp, dataPath);
 
   console.log(`[ingest] wrote "${film.title}" (${film.scenes.length} scenes) → data/films.json`);
   console.warn(`[ingest] ⚠ ${placeholderNow}/${film.scenes.length} scenes need a real "now" photo (nowUrl is placeholder).`);
