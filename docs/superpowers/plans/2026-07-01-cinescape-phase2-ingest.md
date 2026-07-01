@@ -782,7 +782,241 @@ npm run ingest -- --tmdb 76   # Before Sunrise — Wikidata에 촬영지 좌표 
 
 이슈 없음.
 
+---
+
+## Phase 2b — "Now" 현장 사진 자동화 (Wikimedia Commons)
+
+**추가 목표:** 각 촬영지 좌표 근처의 **자유 라이선스 실제 현장 사진**을 Wikimedia Commons에서 찾아 `nowUrl`을 placeholder 대신 진짜로 채운다. Then/Now 슬라이더 오른쪽이 진짜가 된다. 키 불필요(Commons 공개 API).
+
+**추가 Global Constraint:** Commons 엔드포인트 `https://commons.wikimedia.org/w/api.php` (GET, `format=json`, `origin=*`, User-Agent 헤더). geosearch는 namespace 6(File), 반경 최대 10000m. 찾은 이미지가 없으면 `nowUrl`은 기존 placeholder(=stillUrl)로 폴백(스키마 유지). 이미지 URL은 `upload.wikimedia.org` https(zod url() 통과).
+
+### Task 7: Wikimedia Commons "now" 사진 페처
+
+**Files:**
+- Create: `scripts/ingest/commons.ts`
+- Create: `scripts/ingest/__fixtures__/commons-geosearch.json`, `scripts/ingest/__fixtures__/commons-imageinfo.json`
+- Test: `scripts/ingest/__tests__/commons.test.ts`
+
+**Interfaces:**
+- Consumes: `RawLocation` (Task 1)
+- Produces:
+  - `interface NowPhotoFetcher { now(loc: RawLocation): Promise<string | null> }` (types.ts에 추가)
+  - `buildGeosearchUrl(lat, lng): string`, `parseGeosearch(json): string[]` (File: 제목, 이미지 확장자만)
+  - `buildImageInfoUrl(title): string`, `parseImageInfo(json): string | null` (첫 imageinfo url)
+  - `makeCommonsFetcher(fetchFn): NowPhotoFetcher`
+
+- [ ] **Step 1: 실패하는 테스트 작성**
+
+`scripts/ingest/__tests__/commons.test.ts`:
+```typescript
+import { describe, it, expect } from "vitest";
+import { buildGeosearchUrl, parseGeosearch, buildImageInfoUrl, parseImageInfo } from "@/../scripts/ingest/commons";
+import geo from "@/../scripts/ingest/__fixtures__/commons-geosearch.json";
+import info from "@/../scripts/ingest/__fixtures__/commons-imageinfo.json";
+
+describe("buildGeosearchUrl", () => {
+  it("embeds coords, File namespace 6, and json format", () => {
+    const u = buildGeosearchUrl(45.36, 9.68);
+    expect(u).toContain("45.36");
+    expect(u).toContain("9.68");
+    expect(u).toContain("gsnamespace=6");
+    expect(u).toContain("format=json");
+  });
+});
+
+describe("parseGeosearch", () => {
+  it("returns File titles, keeping only image files", () => {
+    const titles = parseGeosearch(geo);
+    expect(titles.length).toBeGreaterThanOrEqual(1);
+    expect(titles.every((t) => /\.(jpe?g|png)$/i.test(t))).toBe(true);
+  });
+});
+
+describe("parseImageInfo", () => {
+  it("returns the first image url", () => {
+    expect(parseImageInfo(info)).toBe("https://upload.wikimedia.org/wikipedia/commons/a/ab/Crema.jpg");
+  });
+  it("returns null when no pages have imageinfo", () => {
+    expect(parseImageInfo({ query: { pages: {} } })).toBeNull();
+  });
+});
+
+describe("buildImageInfoUrl", () => {
+  it("embeds the title and iiprop=url", () => {
+    const u = buildImageInfoUrl("File:Crema.jpg");
+    expect(u).toContain("Crema");
+    expect(u).toContain("iiprop=url");
+  });
+});
+```
+
+- [ ] **Step 2: fixtures 작성**
+
+`scripts/ingest/__fixtures__/commons-geosearch.json`:
+```json
+{ "query": { "geosearch": [
+  { "title": "File:Crema.jpg", "lat": 45.3628, "lon": 9.6859, "dist": 20 },
+  { "title": "File:Crema map.svg", "lat": 45.3629, "lon": 9.6860, "dist": 40 },
+  { "title": "File:Piazza Duomo Crema.jpeg", "lat": 45.3630, "lon": 9.6861, "dist": 55 }
+] } }
+```
+`scripts/ingest/__fixtures__/commons-imageinfo.json`:
+```json
+{ "query": { "pages": { "12345": { "title": "File:Crema.jpg", "imageinfo": [ { "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Crema.jpg" } ] } } } }
+```
+
+- [ ] **Step 3: 테스트 실패 확인**
+
+Run: `npm test -- ingest/__tests__/commons`
+Expected: FAIL — module not found.
+
+- [ ] **Step 4: 구현**
+
+먼저 `scripts/ingest/types.ts`에 인터페이스 추가:
+```typescript
+export interface NowPhotoFetcher { now(loc: RawLocation): Promise<string | null> }
+```
+
+`scripts/ingest/commons.ts`:
+```typescript
+import type { RawLocation, NowPhotoFetcher } from "./types";
+
+const API = "https://commons.wikimedia.org/w/api.php";
+const UA = "CinescapeIngest/1.0 (https://github.com/tkddnjs-dlqslek/cinescape)";
+
+export function buildGeosearchUrl(lat: number, lng: number): string {
+  const p = new URLSearchParams({
+    action: "query", list: "geosearch",
+    gscoord: `${lat}|${lng}`, gsradius: "2000", gsnamespace: "6",
+    gslimit: "10", format: "json", origin: "*",
+  });
+  return `${API}?${p.toString()}`;
+}
+
+export function parseGeosearch(json: unknown): string[] {
+  const arr = (json as { query?: { geosearch?: Array<{ title: string }> } })?.query?.geosearch ?? [];
+  return arr.map((g) => g.title).filter((t) => /\.(jpe?g|png)$/i.test(t));
+}
+
+export function buildImageInfoUrl(title: string): string {
+  const p = new URLSearchParams({
+    action: "query", titles: title, prop: "imageinfo",
+    iiprop: "url", format: "json", origin: "*",
+  });
+  return `${API}?${p.toString()}`;
+}
+
+export function parseImageInfo(json: unknown): string | null {
+  const pages = (json as { query?: { pages?: Record<string, { imageinfo?: Array<{ url: string }> }> } })?.query?.pages ?? {};
+  for (const page of Object.values(pages)) {
+    const url = page.imageinfo?.[0]?.url;
+    if (url) return url;
+  }
+  return null;
+}
+
+export function makeCommonsFetcher(fetchFn: typeof fetch = fetch): NowPhotoFetcher {
+  return {
+    async now(loc: RawLocation): Promise<string | null> {
+      const geoRes = await fetchFn(buildGeosearchUrl(loc.lat, loc.lng), { headers: { "User-Agent": UA } });
+      if (!geoRes.ok) return null;
+      const titles = parseGeosearch(await geoRes.json());
+      if (titles.length === 0) return null;
+      const infoRes = await fetchFn(buildImageInfoUrl(titles[0]), { headers: { "User-Agent": UA } });
+      if (!infoRes.ok) return null;
+      return parseImageInfo(await infoRes.json());
+    },
+  };
+}
+```
+
+- [ ] **Step 5: 테스트 통과 확인**
+
+Run: `npm test -- ingest/__tests__/commons`
+Expected: 5 tests PASS. 그리고 전체 `npm test` 무회귀.
+
+- [ ] **Step 6: 커밋**
+
+```bash
+git add scripts/ingest/commons.ts scripts/ingest/types.ts scripts/ingest/__fixtures__/commons-geosearch.json scripts/ingest/__fixtures__/commons-imageinfo.json scripts/ingest/__tests__/commons.test.ts
+git commit -m "feat: add Wikimedia Commons now-photo fetcher"
+```
+
+---
+
+### Task 8: 조립기 nowUrl 주입 + run.ts 배선
+
+**Files:**
+- Modify: `scripts/ingest/assemble.ts` (assembleFilm에 선택적 `nowUrls` 파라미터 추가 — 하위호환)
+- Modify: `scripts/ingest/run.ts` (Commons 페처로 location별 now 사진 조회 후 assembleFilm에 전달, 경고 갱신)
+- Test: `scripts/ingest/__tests__/assemble.test.ts` (nowUrls 케이스 추가)
+
+**Interfaces:**
+- Consumes: `assembleFilm` (Task 5), `makeCommonsFetcher`/`NowPhotoFetcher` (Task 7)
+- Produces: `assembleFilm(meta, locations, tags, nowUrls?): Film` — `nowUrls[i]`가 있으면 그 scene의 `nowUrl`로 사용, 없으면(undefined/null) 기존 placeholder(=stillUrl).
+
+- [ ] **Step 1: 실패하는 테스트 작성 (assemble.test.ts에 추가)**
+
+```typescript
+it("uses provided nowUrls when present, placeholder otherwise", () => {
+  const film = assembleFilm(meta, locs, tags, ["https://upload.wikimedia.org/x.jpg", null]);
+  expect(film.scenes[0].nowUrl).toBe("https://upload.wikimedia.org/x.jpg");
+  expect(film.scenes[1].nowUrl).toBe(film.scenes[1].stillUrl); // null → placeholder
+});
+```
+
+- [ ] **Step 2: 테스트 실패 확인**
+
+Run: `npm test -- ingest/__tests__/assemble`
+Expected: 새 테스트 FAIL (nowUrls 파라미터 미지원).
+
+- [ ] **Step 3: assembleFilm 수정**
+
+`scripts/ingest/assemble.ts`의 시그니처와 nowUrl 라인만 변경(하위호환 — 4번째 인자 선택적):
+```typescript
+export function assembleFilm(
+  meta: FilmMeta,
+  locations: RawLocation[],
+  tags: TaggedScene[],
+  nowUrls?: (string | null)[],
+): Film {
+```
+그리고 scene 생성 시 nowUrl 라인:
+```typescript
+      const nowUrl = nowUrls?.[i] ?? stillUrl; // real Commons photo if found, else placeholder
+```
+(기존 `nowUrl: stillUrl`를 위 변수 사용으로 교체. 나머지 로직·유니크 id·parseFilms 검증 동일.)
+
+- [ ] **Step 4: run.ts 배선**
+
+`scripts/ingest/run.ts`:
+- import 추가: `import { makeCommonsFetcher } from "./commons";`
+- fetcher 생성: `const commons = makeCommonsFetcher();`
+- tags 루프 다음에 now 사진 조회(실패 내성):
+```typescript
+  const nowUrls: (string | null)[] = [];
+  for (const loc of locations) {
+    try { nowUrls.push(await commons.now(loc)); }
+    catch (e) { console.warn(`[ingest] now-photo failed for "${loc.name}": ${e}`); nowUrls.push(null); }
+  }
+  const film = assembleFilm(meta, locations, tags, nowUrls);
+```
+- placeholder 경고를 실제 기준으로 갱신: `const placeholderNow = film.scenes.filter((s) => s.nowUrl === s.stillUrl).length;` (Commons 사진이 채워진 scene은 stillUrl과 다르므로 정확히 카운트됨 — Task 6 리뷰의 dead-branch도 이로써 해소.)
+
+- [ ] **Step 5: 테스트 통과 + 빌드 확인**
+
+Run: `npm test` (전체 통과) → `npm run build` (green).
+
+- [ ] **Step 6: 커밋**
+
+```bash
+git add scripts/ingest/assemble.ts scripts/ingest/run.ts scripts/ingest/__tests__/assemble.test.ts
+git commit -m "feat: inject Wikimedia now-photos into assembled scenes"
+```
+
+---
+
 ## Out of Scope
-- `nowUrl` 현장 현재 사진 자동 수집(Street View/Mapillary/Wikimedia 라이선스) — 별도 v2.
 - vantage(카메라 정밀 위치/각도) 자동 정밀화 — LLM bearing은 근사치.
 - 배치 ingest(여러 영화 동시) — 현재는 한 번에 한 영화. 필요 시 run.ts에 `--list` 추가.
+- Commons 사진의 "정확히 그 프레임/각도" 매칭 — geosearch는 근접 사진일 뿐, 정밀 매칭은 사람 검수(HITL).
