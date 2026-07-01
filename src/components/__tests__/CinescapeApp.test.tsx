@@ -1,5 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
+import { getFilms } from "@/lib/data";
 
 // react-globe.gl can't render in jsdom — replace GlobeView with a stub.
 vi.mock("@/components/GlobeView", () => ({
@@ -18,10 +19,19 @@ describe("CinescapeApp", () => {
   });
 
   it("shows the scene panel after selecting a film from search", () => {
+    const film = getFilms()[0];
+    // Use the first word of the title (lowercased) as the search term —
+    // always a substring of the title so searchFilms always returns this film.
+    const searchTerm = film.title.split(" ")[0].toLowerCase();
+    // Escape regex special chars so any film title can be used safely.
+    const titlePattern = new RegExp(
+      film.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
+      "i",
+    );
     render(<CinescapeApp />);
-    fireEvent.change(screen.getByRole("textbox"), { target: { value: "call me" } });
-    fireEvent.click(screen.getByRole("option"));
+    fireEvent.change(screen.getByRole("textbox"), { target: { value: searchTerm } });
+    fireEvent.click(screen.getByRole("option", { name: titlePattern }));
     expect(screen.getByRole("complementary")).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Call Me By Your Name" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: film.title })).toBeInTheDocument();
   });
 });
