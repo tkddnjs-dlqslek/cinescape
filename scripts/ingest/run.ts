@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, renameSync } from "node:fs";
+import { readFileSync, writeFileSync, renameSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 import { parseFilms, type Film } from "@/lib/types";
@@ -9,7 +9,19 @@ import { makeCommonsFetcher } from "./commons";
 import { assembleFilm } from "./assemble";
 import { mergeFilms } from "./merge";
 
+// tsx does not auto-load .env like Next.js does. Load it manually (existing
+// process.env vars win, so shell overrides still work).
+function loadDotenv(): void {
+  const envPath = resolve(process.cwd(), ".env");
+  if (!existsSync(envPath)) return;
+  for (const line of readFileSync(envPath, "utf8").split(/\r?\n/)) {
+    const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
+    if (m && !process.env[m[1]]) process.env[m[1]] = m[2];
+  }
+}
+
 async function main() {
+  loadDotenv();
   const arg = process.argv.indexOf("--tmdb");
   const tmdbId = arg !== -1 ? Number(process.argv[arg + 1]) : NaN;
   if (!Number.isFinite(tmdbId)) {
