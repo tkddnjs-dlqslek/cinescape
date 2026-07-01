@@ -4,9 +4,13 @@ import type { RawLocation, TaggedScene, SceneTagger } from "./types";
 export function buildTagPrompt(filmTitle: string, loc: RawLocation): string {
   return [
     `영화 "${filmTitle}"의 촬영지 "${loc.name}" (위도 ${loc.lat}, 경도 ${loc.lng})에 대해,`,
-    `시네필 여행자를 위한 한국어 장면 설명을 작성하세요.`,
-    `반드시 아래 JSON만 출력하세요(다른 텍스트 금지):`,
-    `{"note": "이 장소에서 일어난 인상적인 장면 한 문장(한국어)", "bearing": 카메라가 향한 대략 방위각 0-360 정수(모르면 0)}`,
+    `시네필 여행자를 위한 한국어 장면 설명(note)을 1~2문장으로 작성하세요.`,
+    `규칙:`,
+    `- 확실한 사실만 쓰세요. 확신이 없으면 지어내지 말고, 그 장소의 실제 모습과 분위기 중심으로 담백하게 묘사하세요.`,
+    `- 등장인물 이름이나 구체적 줄거리가 확실하지 않으면 이름을 쓰지 말고 "이 장소" 같은 표현으로 대신하세요.`,
+    `- 여행자가 현장에서 떠올릴 만한 장면·감정을 우아하게, 과장 없이.`,
+    `반드시 아래 JSON 객체 하나만 출력하세요(코드펜스·설명 등 다른 텍스트 금지):`,
+    `{"note": "한국어 장면 설명", "bearing": 카메라가 향한 대략 방위각 0-360 정수(모르면 0)}`,
   ].join("\n");
 }
 
@@ -31,8 +35,8 @@ export function makeSceneTagger(client: Anthropic): SceneTagger {
   return {
     async tag(filmTitle: string, loc: RawLocation): Promise<TaggedScene> {
       const msg = await client.messages.create({
-        model: "claude-haiku-4-5-20251001",
-        max_tokens: 256,
+        model: "claude-sonnet-4-6",
+        max_tokens: 400,
         messages: [{ role: "user", content: buildTagPrompt(filmTitle, loc) }],
       });
       const text = msg.content

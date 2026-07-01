@@ -9,7 +9,7 @@
       {
         "id": "call-me-by-your-name-moscazzano",
         "name": "Moscazzano",
-        "note": "엘리오와 올리버가 이탈리아 롬바르디아의 시골 저택 정원에서 처음 만나 서로를 인식하게 되는 설렘 가득한 장면이 펼쳐지는 영화의 심장부이자, 두 청년의 운명적인 만남이 시작되는 마법 같은 공간이다.",
+        "note": "이탈리아 북부 롬바르디아의 조용한 농촌 마을로, 영화 속 여름날의 나른하고 감각적인 분위기가 실제 풍경에도 그대로 녹아 있다. 햇살 아래 펼쳐진 평원과 소박한 마을길을 걸으며, 그 계절의 달콤하고 쓸쓸한 감정을 자연스럽게 떠올리게 된다.",
         "coord": {
           "lat": 45.283333333,
           "lng": 9.683333333
@@ -30,7 +30,7 @@
       {
         "id": "before-sunrise-vienna",
         "name": "Vienna",
-        "note": "Jesse와 Céline이 비엔나의 야경 속에서 밤새 산책하며 인생과 사랑에 대해 깊은 대화를 나누는 로맨틱한 장면들이 펼쳐지는 도시",
+        "note": "리처드 링클레이터의 영화 속 두 연인이 밤새 걸으며 대화를 나눈 도시, 빈의 거리와 광장은 낯선 이와의 우연한 만남이 얼마나 깊어질 수 있는지를 조용히 증명한다.",
         "coord": {
           "lat": 48.208333333,
           "lng": 16.3725
@@ -51,7 +51,7 @@
       {
         "id": "midnight-in-paris-paris",
         "name": "Paris",
-        "note": "주인공 길이 1920년대 파리로 시간 여행을 떠나는 신비로운 자동차 장면이 펼쳐지는 파리의 야밤 거리로, 과거와 현재가 교차하는 마법 같은 순간을 담아낸 영화의 핵심 배경",
+        "note": "우디 앨런의 카메라가 사랑에 빠졌던 도시, 파리의 거리와 광장은 밤이 되면 황금빛 가로등 아래 특별한 마법을 품는다. 이 도시를 거닐다 보면, 영화 속 주인공처럼 시간의 경계가 흐릿해지는 듯한 낭만적인 착각에 빠져들게 된다.",
         "coord": {
           "lat": 48.856666666,
           "lng": 2.352222222
@@ -63,7 +63,7 @@
       {
         "id": "midnight-in-paris-palace-of-versailles",
         "name": "Palace of Versailles",
-        "note": "영화의 주인공 길이 1920년대 파리로 시간 여행을 떠나는 마법 같은 순간이 펼쳐지는 베르사유 궁전의 화려한 정원과 궁전 건축물들이 배경이 되어 과거와 현재를 넘나드는 낭만적인 여정의 시작을 장식한다.",
+        "note": "베르사유 궁전의 화려한 정원과 거울의 방은 영화 속 주인공이 과거 황금시대를 동경하며 거닐던 공간으로, 이곳에 서면 시간을 거슬러 올라가는 듯한 묘한 감각을 느낄 수 있다.",
         "coord": {
           "lat": 48.804722222,
           "lng": 2.120277777
@@ -75,19 +75,19 @@
       {
         "id": "midnight-in-paris-giverny",
         "name": "Giverny",
-        "note": "골 해리슨이 시간 여행으로 1920년대 파리에 도착한 후 인상파 거장들을 만나는 마법 같은 밤의 여정이 시작되는 지베르니의 수련 정원에서, 현실과 꿈의 경계가 아름답게 녹아드는 장면",
+        "note": "클로드 모네의 수련 연못과 일본식 다리로 유명한 지베르니는, 영화 속 주인공이 과거의 예술가들을 동경하며 거닐던 낭만적 풍경의 배경이 된 곳이다. 초록빛 수면 위로 드리운 버드나무와 아치형 다리를 바라보면, 시간을 거슬러 인상파의 세계로 빠져드는 듯한 감각을 느낄 수 있다.",
         "coord": {
           "lat": 49.076111111,
           "lng": 1.529166666
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/zfJBdbaGYinvwI1ccby1Gi8S9dd.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Giverny_001.jpg",
-        "bearing": 270
+        "bearing": 0
       },
       {
         "id": "midnight-in-paris-saint-etienne-du-mont",
         "name": "Saint-Étienne-du-Mont",
-        "note": "주인공 길이 밤거리를 헤매다가 우연히 발견한 이 고풍스러운 교회에서 과거로의 신비로운 시간 여행이 시작되는 영화의 핵심 무대이자, 파리의 낭만적인 야경이 가장 아름답게 드러나는 장소입니다.",
+        "note": "파리의 밤을 배경으로 한 이 고딕 양식의 성당 앞 계단은, 영화 속 주인공이 자정의 빗소리 속에 과거로 이끌려 가던 신비로운 분위기를 그대로 간직하고 있다. 황금빛 가로등 아래 고요히 서 있으면, 시간의 경계가 흐려지는 듯한 감각이 자연스레 찾아온다.",
         "coord": {
           "lat": 48.84653,
           "lng": 2.34803
@@ -99,14 +99,14 @@
       {
         "id": "midnight-in-paris-square-jean-xxiii",
         "name": "square Jean-XXIII",
-        "note": "노스탤지어에 빠진 주인공이 자정을 넘겨 1920년대 파리로 시간여행을 떠나는 마법같은 순간이 펼쳐지는 노트르담 대성당 앞 광장",
+        "note": "노트르담 대성당이 바라보이는 이 정원은 영화 속 주인공이 파리의 밤을 거닐며 과거와 현재 사이를 오가던 몽환적인 분위기를 그대로 간직하고 있다. 센 강변의 고요한 돌길과 성당의 실루엣 앞에 서면, 영화가 담아낸 파리에 대한 낭만적 열망이 자연스레 떠오른다.",
         "coord": {
           "lat": 48.8525,
           "lng": 2.35139
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/sIJTdyF6JFbIz5mENPpeSlCKYyB.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Fontaine_de_l%27Archev%C3%AAch%C3%A9.jpg",
-        "bearing": 0
+        "bearing": 270
       }
     ]
   },
@@ -120,7 +120,7 @@
       {
         "id": "amelie-paris",
         "name": "Paris",
-        "note": "아멜리가 카페 드 플로르에서 혼자만의 상상의 세계에 빠져 있으며, 파리의 몽마르트 언덕에서 도시의 아름다움을 발견하는 신비로운 순간들이 펼쳐지는 장소입니다.",
+        "note": "몽마르트르 언덕과 센강이 어우러진 파리의 골목들은 이 영화의 따뜻하고 몽환적인 색감 그대로, 일상의 작은 기적을 믿게 만드는 분위기를 품고 있다.",
         "coord": {
           "lat": 48.856666666,
           "lng": 2.352222222
@@ -132,7 +132,7 @@
       {
         "id": "amelie-cologne",
         "name": "Cologne",
-        "note": "라인 강변의 낭만적인 야경과 함께 아멜리의 내적 성장이 시각화되는 독일의 중요한 촬영지",
+        "note": "쾰른의 거리 어딘가, 아멜리에의 세계처럼 일상의 소소한 풍경이 특별한 빛을 띠는 곳이다. 이 도시의 골목과 광장을 걸으며, 누군가의 삶을 조용히 바꾸어놓는 작은 우연을 상상해볼 수 있다.",
         "coord": {
           "lat": 50.942222222,
           "lng": 6.957777777
@@ -144,7 +144,7 @@
       {
         "id": "amelie-montmartre",
         "name": "Montmartre",
-        "note": "아멜리가 카페 데 드 무랑에서 처음 등장하여 파리의 매력적인 몽마르트 거리를 배경으로 자신만의 마법 같은 세상을 펼쳐 보이는 영화의 상징적인 장면이 펼쳐지는 곳입니다.",
+        "note": "몽마르트르의 골목과 카페, 채소 가게들이 어우러진 이 동네는 영화 속 주인공이 일상의 작은 기적들을 발견하며 걸어 다니던 무대로, 지금도 붉은 제라늄 화분과 낡은 파사드 사이를 걷다 보면 그 몽환적이고 따뜻한 분위기가 고스란히 느껴진다.",
         "coord": {
           "lat": 48.886944444,
           "lng": 2.341111111
@@ -156,7 +156,7 @@
       {
         "id": "amelie-gare-d-ermont-eaubonne",
         "name": "Gare d'Ermont - Eaubonne",
-        "note": "아멜리가 기차역 플랫폼에서 수줍은 미소로 주변을 관찰하며 파리의 일상 속 마법을 발견하는 장면",
+        "note": "파리 근교의 작은 기차역으로, 영화 속 주인공이 열차를 타고 일상과 모험 사이를 오가던 공간이다. 플랫폼에 서면 소박한 역사(驛舍)와 철로가 만들어내는 고요한 풍경 속에서, 영화가 담아낸 파리 변두리의 서정적 분위기를 자연스럽게 느낄 수 있다.",
         "coord": {
           "lat": 48.980555555,
           "lng": 2.271666666
@@ -168,7 +168,7 @@
       {
         "id": "amelie-porte-des-lilas-cinema",
         "name": "Porte des Lilas - Cinéma",
-        "note": "아멜리가 혼자만의 세계에 빠져 영화관 앞 광장에서 상상의 나래를 펼치며 몽환적인 표정으로 거리를 거닐던 장면으로, 파리의 소박한 일상 속에서 마법이 시작되는 순간을 보여주는 영화의 상징적인 로케이션입니다.",
+        "note": "파리 외곽의 한적한 이 메트로 역 일대는 영화 속 몽환적인 파리의 분위기를 담아낸 세트처럼 꾸며진 거리로, 실제 촬영지를 찾아온 여행자라면 화면 속 빛바랜 골목의 질감이 눈앞에 그대로 펼쳐지는 듯한 감각을 느낄 수 있다.",
         "coord": {
           "lat": 48.8873328,
           "lng": 2.24609213
@@ -189,7 +189,7 @@
       {
         "id": "lost-in-translation-japan",
         "name": "Japan",
-        "note": "도쿄의 네온으로 빛나는 밤거리에서 톰 크루즈와 스칼렛 조핸슨이 고독하지만 아름다운 우정을 나누며 일본 문화의 낯선 매력 속에 빠져든다.",
+        "note": "도쿄의 네온 불빛과 낯선 언어 속에서 이방인으로 머물던 두 사람의 고요한 고독이 이 도시 곳곳에 스며 있다. 번화한 거리와 호텔 창문 너머로 펼쳐지는 야경을 바라보면, 영화 속 그 묘한 연결감과 쓸쓸함이 자연스럽게 떠오른다.",
         "coord": {
           "lat": 35,
           "lng": 136
@@ -201,7 +201,7 @@
       {
         "id": "lost-in-translation-tokyo",
         "name": "Tokyo",
-        "note": "도쿄의 화려한 네온빛이 가득한 신주쿠 거리에서 톰 크루즈와 스칼렛 요한슨이 도시의 고독함과 아름다움을 함께 느끼며 교감하는 장면",
+        "note": "소피아 코폴라의 카메라가 담아낸 도쿄의 밤은 네온과 고독이 뒤섞인 풍경으로, 이 도시의 거대한 익명성 속에서 두 이방인이 서로를 알아보는 감각을 고스란히 전한다. 거리를 걷다 보면 영화 속 유리창 너머로 흘러가던 도시의 빛들이 여전히 낯설고도 아름답게 빛나고 있음을 느낄 수 있다.",
         "coord": {
           "lat": 35.689444444,
           "lng": 139.691666666
@@ -213,7 +213,7 @@
       {
         "id": "lost-in-translation-kyoto",
         "name": "Kyoto",
-        "note": "밤거리를 혼자 걷는 밥 해리스가 교토의 전통 거리에서 일본 문화의 고요함과 고독감을 동시에 느끼며 자신의 내면 세계로 침잠하는 장면",
+        "note": "고요한 사찰과 골목이 이어지는 교토의 풍경은 영화 속 두 이방인이 느꼈을 낯선 아름다움과 고독을 자연스레 떠올리게 한다. 오래된 도시의 정적 속에서 관객은 스스로도 잠시 길을 잃은 여행자가 된 듯한 감각을 경험한다.",
         "coord": {
           "lat": 35.011611111,
           "lng": 135.768111111
@@ -234,38 +234,38 @@
       {
         "id": "la-la-land-los-angeles",
         "name": "Los Angeles",
-        "note": "세바스찬과 미아가 그리피스 천문대 위에서 밤하늘을 바라보며 꿈을 나누는 로맨틱한 장면이 펼쳐지는 로스앤젤레스의 심장부입니다.",
+        "note": "라라랜드의 배경 도시 로스앤젤레스는 황금빛 석양과 야자수가 드리운 거리로 유명하며, 영화 속 두 주인공이 꿈을 향해 걷던 그 빛과 공기가 도시 곳곳에 여전히 남아 있다.",
         "coord": {
           "lat": 34.05223,
           "lng": -118.24368
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/nlPCdZlHtRNcF6C9hzUH4ebmV1w.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/LA_Chinatown_2011_-_panoramio_%2815%29.jpg",
-        "bearing": 270
+        "bearing": 0
       },
       {
         "id": "la-la-land-long-beach",
         "name": "Long Beach",
-        "note": "라라랜드에서 세바스찬과 미아가 롱비치의 야경을 배경으로 재즈 클럽에서 만나 운명적인 첫 만남을 나누는 감동적인 장면이 펼쳐지는 곳입니다.",
+        "note": "롱비치의 탁 트인 해안가는 영화 속 두 사람이 꿈과 현실 사이에서 흔들리던 정서를 고스란히 품고 있다. 바다를 향해 서면, 저 멀리 수평선과 항구의 풍경이 영화가 남긴 아련한 여운을 조용히 되살려준다.",
         "coord": {
           "lat": 33.768055555,
           "lng": -118.195555555
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/2wmDyHz4gvF6m51IQZJnJzlLsnz.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Long_Beach_Hooters_-_panoramio.jpg",
-        "bearing": 180
+        "bearing": 270
       },
       {
         "id": "la-la-land-griffith-observatory",
         "name": "Griffith Observatory",
-        "note": "미아와 세바스찬이 LA의 야경을 배경으로 춤을 추며 사랑을 확인하는 영화의 가장 낭만적인 장면이 촬영된 천문대",
+        "note": "LA의 야경이 한눈에 펼쳐지는 그리피스 천문대는 영화 속 두 주인공이 별빛 아래 춤을 추던 꿈결 같은 무대로, 실제로 이곳에 서면 도시의 불빛과 밤하늘이 맞닿는 그 경계에서 영화의 감각이 조용히 되살아난다.",
         "coord": {
           "lat": 34.118561111,
           "lng": -118.300369444
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/rVRtRE6HJ5xbdo5jd9aTT8tEVaF.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Los_Angeles_Downtown_%2819510159%29.jpeg",
-        "bearing": 270
+        "bearing": 180
       }
     ]
   },
@@ -279,7 +279,7 @@
       {
         "id": "the-grand-budapest-hotel-germany",
         "name": "Germany",
-        "note": "그랜드 부다페스트 호텔의 중부 유럽 배경이 되는 독일의 광활한 풍경에서 영화의 우아하고 몽환적인 미학이 완성되었습니다.",
+        "note": "독일의 고즈넉한 산악 마을과 유서 깊은 호텔 건축물들이 웨스 앤더슨 특유의 파스텔 색감과 맞닿아, 이곳을 걷다 보면 화면 속 대칭적이고 동화 같은 풍경이 자연스레 떠오른다.",
         "coord": {
           "lat": 51,
           "lng": 10
@@ -291,7 +291,7 @@
       {
         "id": "the-grand-budapest-hotel-krakow",
         "name": "Kraków",
-        "note": "그랜드 부다페스트 호텔의 화려한 외관과 유럽의 우아한 건축물들이 어우러진 크라쿠프의 역사적 거리에서 웨스 앤더슨 감독의 독특한 색감과 대칭 미학이 돋보이는 장면들이 촬영되었습니다.",
+        "note": "크라쿠프의 고풍스러운 중세 거리와 파스텔빛 건물들은 웨스 앤더슨 특유의 동화적 유럽 정서를 고스란히 품고 있어, 영화 속 꼼꼼하게 구획된 세계가 실제로 존재했을 법한 착각을 불러일으킨다.",
         "coord": {
           "lat": 50.061388888,
           "lng": 19.937222222
@@ -312,19 +312,19 @@
       {
         "id": "cinema-paradiso-sicily",
         "name": "Sicily",
-        "note": "시실리의 작은 해안 마을에서 늙은 영사와 소년 살바토레가 영화관의 추억 속에서 만나 영화 필름의 키스 장면들을 함께 보며 인생과 사랑의 본질을 깨닫는 감동적인 장면",
+        "note": "시칠리아의 햇살 아래 펼쳐지는 이 땅은 영화 속 소년이 영사실을 오가며 꿈을 키웠던 그 공기를 품고 있다. 낡은 광장과 골목길에 서면, 필름 속 기억처럼 시간이 천천히 흐르는 느낌이 든다.",
         "coord": {
           "lat": 37.6,
           "lng": 14.016666666
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/zoVeIgKzGJzpdG6Gwnr7iOYfIMU.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Temple_De_La_Concorde_%28135021551%29.jpeg",
-        "bearing": 180
+        "bearing": 0
       },
       {
         "id": "cinema-paradiso-palermo",
         "name": "Palermo",
-        "note": "팔레르모의 좁은 골목과 오래된 건축물들이 영화 속 시네마 파라디소의 추억 어린 분위기를 완벽하게 담아내며, 주인공이 영사실에서 내려와 도시의 거리를 거닐며 과거의 기억 속으로 빠져드는 장면의 무대가 되었습니다.",
+        "note": "시칠리아의 항구도시 팔레르모는 영화 속 소년이 꿈을 키워간 고향의 배경으로, 오래된 골목과 바로크 건축물 사이를 걷다 보면 지중해의 빛과 시간의 냄새가 뒤섞인 그 시절의 정취가 자연스럽게 떠오른다.",
         "coord": {
           "lat": 38.115658055,
           "lng": 13.361261944
@@ -345,7 +345,7 @@
       {
         "id": "roman-holiday-rome",
         "name": "Rome",
-        "note": "공주 앤이 기자 조 브래들리와 로마의 거리를 누비며 자유로움을 만끽하는 영화의 하이라이트 장면들이 펼쳐지는 영원한 도시의 심장부",
+        "note": "로마의 유서 깊은 거리와 광장들이 고스란히 남아 있는 이 도시에서, 자유를 만끽하는 하루를 그린 영화의 정취를 고즈넉한 골목과 분수 곁에서 자연스레 떠올릴 수 있다.",
         "coord": {
           "lat": 41.893055555,
           "lng": 12.482777777
@@ -366,7 +366,7 @@
       {
         "id": "in-the-mood-for-love-macau",
         "name": "Macau",
-        "note": "좁은 골목의 붉은 벽과 초록색 셔터 사이로 두 주인공이 스쳐 지나가며 억압된 감정을 드러내는 영화의 상징적 장면이 촬영된 마카오의 포르투갈식 건축물들이 시간을 멈춘 듯 서 있다.",
+        "note": "왕가위 감독이 마카오의 좁고 오래된 골목과 낡은 건물들 사이에서 억눌린 감정의 밀도를 담아낸 곳으로, 세월이 켜켜이 쌓인 이 거리를 걷다 보면 말하지 못한 감정들이 공기 중에 남아 있는 듯한 느낌을 받게 된다.",
         "coord": {
           "lat": 22.19,
           "lng": 113.538055555
@@ -387,7 +387,7 @@
       {
         "id": "panic-room-new-york-city",
         "name": "New York City",
-        "note": "뉴욕의 맨해튼 고급 주택가에서 엄마와 딸이 침입자들로부터 숨어 긴장감 넘치는 사투를 벌이는 장면들이 촬영된 도시입니다.",
+        "note": "데이빗 핀처 감독의 《패닉 룸》은 뉴욕 어퍼 웨스트사이드의 브라운스톤 타운하우스를 배경으로, 도시의 일상적인 주택가 풍경 속에 극도의 밀실 긴장감을 녹여낸 작품이다. 거리를 걷다 보면 평범해 보이는 건물 하나하나가 그 안에 얼마나 많은 이야기를 품고 있을지 문득 생각하게 된다.",
         "coord": {
           "lat": 40.712777777,
           "lng": -74.006111111
@@ -399,7 +399,7 @@
       {
         "id": "panic-room-los-angeles",
         "name": "Los Angeles",
-        "note": "조애나 일리노스키가 방음 처리된 공황실에 갇혀 외부 침입자들로부터 가족을 지키기 위해 지혜와 용기로 맞서는 긴장감 넘치는 심리 스릴러의 무대가 된 현대적 맨션.",
+        "note": "데이비드 핀처 감독의 손길이 느껴지는 로스앤젤레스는 '패닉 룸'의 폐쇄적 긴장감과 대조되는 광활한 도시 풍경을 품고 있으며, 이 도시의 어딘가에 존재할 법한 고요한 브라운스톤 저택을 상상하며 걷게 된다.",
         "coord": {
           "lat": 34.05223,
           "lng": -118.24368
@@ -420,19 +420,19 @@
       {
         "id": "mamma-mia-lloyd-s-building",
         "name": "Lloyd's building",
-        "note": "런던 금융가의 상징적 건축물 Lloyd's Building은 영화에서 Sophie가 결혼식을 준비하며 런던의 현대적 활력을 표현하는 배경으로 등장합니다.",
+        "note": "런던 금융가 한복판에 자리한 로이즈 빌딩은 노출된 파이프와 철골이 인상적인 하이테크 건축의 상징으로, 영화 속 도시적 배경으로 활용된 이 공간 앞에 서면 강렬한 산업미와 현대 도시의 에너지가 동시에 느껴진다.",
         "coord": {
           "lat": 51.513055555,
           "lng": -0.0825
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/85BQpS3lEA7wESlGUCFQZNoPoo8.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Lloyd%27s_Building_Elevators.jpg",
-        "bearing": 0
+        "bearing": 270
       },
       {
         "id": "mamma-mia-skopelos",
         "name": "Skopelos",
-        "note": "소피와 그녀의 세 아버지가 하얀 교회 종탑 앞에서 합창하며, 에게 해의 푸른 수평선을 배경으로 ABBA의 감정적인 클라이맥스 장면이 펼쳐지는 장소입니다.",
+        "note": "에게해의 짙푸른 바다와 하얀 벽의 마을이 어우러진 스코펠로스는 《맘마 미아!》의 배경이 된 그리스 섬으로, 올리브 나무 사이로 이어지는 오솔길을 걷다 보면 영화 속 여름날의 들뜬 감정이 자연스럽게 떠오른다.",
         "coord": {
           "lat": 39.122,
           "lng": 23.727
@@ -444,7 +444,7 @@
       {
         "id": "mamma-mia-buckinghamshire",
         "name": "Buckinghamshire",
-        "note": "그리스 섬의 목가적인 풍경으로 위장된 영국 버킹엄셔의 우아한 저택에서 ABBA의 명곡들이 울려 퍼지는 가운데 소피와 그녀의 어머니 도나가 감정적인 재회를 나누는 장면이 펼쳐진다.",
+        "note": "잉글랜드 버킹엄셔의 완만한 구릉과 초록 들판이 펼쳐지는 이곳은, 영화 속 지중해의 낭만적인 분위기를 위한 배경 촬영지로 활용되었다. 탁 트인 전원 풍경 앞에 서면, 스크린 너머로 흘러들던 ABBA의 선율이 자연스레 떠오를 것이다.",
         "coord": {
           "lat": 51.828022246,
           "lng": -0.790425894
@@ -465,7 +465,7 @@
       {
         "id": "back-to-the-future-los-angeles",
         "name": "Los Angeles",
-        "note": "마티가 타임머신 개조 DeLorean을 처음 타고 1955년으로 시간 여행을 떠나는 로스앤젤레스의 상징적인 거리 장면이 촬영된 곳입니다.",
+        "note": "백 투 더 퓨처의 주요 장면들이 촬영된 로스앤젤레스는 현재도 그 시절의 거리와 건물들이 남아 있어, 영화 속 시간 여행의 흥분이 일상의 풍경 위에 겹쳐지는 묘한 감각을 선사한다.",
         "coord": {
           "lat": 34.05223,
           "lng": -118.24368
@@ -477,14 +477,14 @@
       {
         "id": "back-to-the-future-gamble-house",
         "name": "Gamble House",
-        "note": "마티 맥플라이가 1985년에서 1955년으로 시간 여행을 떠나기 전, 닥터 에밋 브라운과 함께 시간 여행 계획을 세우던 저택의 외부 장면이 촬영된 곳입니다.",
+        "note": "백 투 더 퓨처에서 닥터 브라운의 저택으로 등장한 이 아르츠 앤드 크래프츠 양식의 고풍스러운 저택 앞에 서면, 영화 속 그 문을 직접 두드리는 듯한 기묘한 시간의 겹침을 느낄 수 있다.",
         "coord": {
           "lat": 34.151561,
           "lng": -118.1608
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/2H2YYbn8wDzYXtak83Md6PAwMdp.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/California_Landmark_No._871_The_Gamble_House_-_panoramio_%283%29.jpg",
-        "bearing": 0
+        "bearing": 180
       }
     ]
   },
@@ -498,7 +498,7 @@
       {
         "id": "the-silence-of-the-lambs-pittsburgh",
         "name": "Pittsburgh",
-        "note": "FBI 신입 요원 클래리스가 연쇄살인범의 흔적을 추적하며 피츠버그의 어두운 골목과 산업 지역을 누비는 긴장감 넘치는 장면들이 촬영된 곳입니다.",
+        "note": "피츠버그의 낡고 육중한 건물들과 강을 끼고 이어지는 거리는 영화 속 긴장과 음울함을 그대로 품고 있어, 이곳을 걷다 보면 스크린 너머의 서늘한 공기가 피부에 닿는 듯하다.",
         "coord": {
           "lat": 40.441666666,
           "lng": -80
@@ -510,7 +510,7 @@
       {
         "id": "the-silence-of-the-lambs-bimini",
         "name": "Bimini",
-        "note": "이 장소는 실제로 영화 촬영지가 아니며, 영화 '양들의 침묵'은 필라델피아, 웨스트버지니아, 노스캐롤라이나 등 미국 동부에서 촬영되었습니다.",
+        "note": "바하마의 투명한 에메랄드빛 바다와 고요한 섬의 풍경이 펼쳐지는 이곳은, 영화 속 긴장감과는 대조적으로 눈부시게 평화로운 분위기를 자아낸다. 스크린 너머의 서늘한 기억을 품은 채 수평선을 바라보면, 그 고요함이 오히려 낯설게 느껴질지도 모른다.",
         "coord": {
           "lat": 25.733333333,
           "lng": -79.25
@@ -522,19 +522,19 @@
       {
         "id": "the-silence-of-the-lambs-carnegie-museum-of-natural-history",
         "name": "Carnegie Museum of Natural History",
-        "note": "FBI 훈련생 클래리스가 연쇄살인범의 단서를 찾기 위해 박물관의 곤충 표본실을 방문하여 범인의 심리를 파악하는 긴장감 넘치는 장면이 촬영된 곳입니다.",
+        "note": "자연사박물관의 웅장한 석조 건물과 어두운 복도는 영화 속 FBI 수사관이 연쇄살인마의 단서를 추적하던 긴장감을 자연스럽게 떠올리게 한다. 실제로 서 있으면 그 묵직한 분위기가 스크린 밖에서도 고스란히 전해진다.",
         "coord": {
           "lat": 40.443611111,
           "lng": -79.95
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/5EqT0WyG7yYs8v7GdoS4R9P75Gz.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sequoya_alphabet.jpg",
-        "bearing": 0
+        "bearing": 90
       },
       {
         "id": "the-silence-of-the-lambs-pittsburgh-international-airport",
         "name": "Pittsburgh International Airport",
-        "note": "FBI 요원들이 연쇄살인범을 추적하기 위해 공항에서 용의자를 감시하는 긴장감 넘치는 장면이 촬영된 곳으로, 영화의 클라이맥스를 향한 중요한 전환점이 되었습니다.",
+        "note": "영화 속 팽팽한 긴장감이 흐르던 공항 장면의 배경이 된 곳으로, 오늘날에도 여행객들이 분주히 오가는 일상적인 공간 속에서 당시 화면의 냉랭한 공기가 문득 떠오른다.",
         "coord": {
           "lat": 40.495997,
           "lng": -80.256693
@@ -546,7 +546,7 @@
       {
         "id": "the-silence-of-the-lambs-south-bimini-airport",
         "name": "South Bimini Airport",
-        "note": "FBI 요원 클라리스가 직렬살인범 버팔로 빌을 추적하기 위해 도착한 바이미 섬의 작은 공항으로, 영화의 긴장감 넘치는 클라이맥스를 향한 발걸음이 시작되는 장소입니다.",
+        "note": "작은 활주로와 소박한 터미널이 자리한 이 공항은, 영화 속 긴장감 넘치는 이동 장면의 배경으로 쓰였다. 탁 트인 하늘 아래 서면, 스릴러 특유의 고요하고 불안한 공기가 자연스레 떠오른다.",
         "coord": {
           "lat": 25.7,
           "lng": -79.264722222
@@ -558,7 +558,7 @@
       {
         "id": "the-silence-of-the-lambs-south-bimini-airport-2",
         "name": "South Bimini Airport",
-        "note": "FBI 요원들이 연쇄살인범을 추적하기 위해 플로리다의 외딴 공항에 도착하는 긴장감 넘치는 장면이 펼쳐지는 곳입니다.",
+        "note": "작은 활주로와 탁 트인 하늘이 인상적인 이 공항은, 영화 속 긴박한 이동 장면의 배경으로 쓰인 곳이다. 바람에 흔들리는 야자수와 소박한 터미널 앞에 서면, 스릴러 특유의 긴장감이 조용히 되살아오는 듯하다.",
         "coord": {
           "lat": 25.7,
           "lng": -79.263333
@@ -570,7 +570,7 @@
       {
         "id": "the-silence-of-the-lambs-fbi-academy",
         "name": "FBI Academy",
-        "note": "FBI 아카데미에서 클라리스 스탠링이 행동 분석 교관 잭 크로포드를 만나 한니발 렉터의 심리 프로필을 받는 장면이 촬영된 곳으로, 영화의 핵심적인 수사 기초가 마련되는 상징적 공간입니다.",
+        "note": "실제 FBI 아카데미가 위치한 콴티코 기지 내 이 장소는, 영화 속 주인공이 훈련생으로서 긴장감 속에 걷던 그 캠퍼스의 분위기를 고스란히 간직하고 있다. 단정한 연방 건물들과 넓은 부지를 바라보면, 화면 속 냉정하고 숨막히는 공기가 자연스레 떠오른다.",
         "coord": {
           "lat": 38.530219444,
           "lng": -77.445927777
@@ -582,7 +582,7 @@
       {
         "id": "the-silence-of-the-lambs-old-allegheny-county-jail",
         "name": "Old Allegheny County Jail",
-        "note": "FBI 훈련생 클래리스가 사이코패스 연쇄살인범 버팔로 빌의 정보를 얻기 위해 수감 중인 천재 정신과 의사이자 살인마 한니발 렉터를 찾아가 긴장감 넘치는 대면을 나누는 감옥의 침울한 복도 장면이 촬영되었던 곳입니다.",
+        "note": "19세기에 지어진 육중한 석조 건물로, 철창과 돌벽이 만들어내는 음산한 분위기가 영화 속 긴장감을 그대로 떠올리게 한다. 이 감옥의 차갑고 어두운 복도를 마주하면, 스크린 너머로 느꼈던 그 서늘한 공포가 현실로 스며드는 듯하다.",
         "coord": {
           "lat": 40.438472222,
           "lng": -79.995527777
@@ -594,7 +594,7 @@
       {
         "id": "the-silence-of-the-lambs-layton",
         "name": "Layton",
-        "note": "FBI 요원 클래리스가 살인마의 집을 찾기 위해 지역을 수색하며 긴장감 넘치는 추적 장면이 펼쳐지는 펜실베니아의 작은 마을",
+        "note": "펜실베이니아의 조용한 시골 마을 풍경 속에, 이 장소는 영화 속 긴장감 넘치는 추적 서사의 배경이 된 곳이다. 평범한 일상의 풍경과 영화 속 어둠이 교차하는 묘한 감각을 느낄 수 있다.",
         "coord": {
           "lat": 40.09,
           "lng": -79.722777777
@@ -615,13 +615,106 @@
       {
         "id": "se7en-california",
         "name": "California",
-        "note": "경찰서 외부 및 도시 곳곳에서 일어난 연쇄살인 사건의 수사 장면들이 촬영된 캘리포니아의 황량한 산업지역으로, 영화의 어두운 분위기를 극적으로 표현하는 배경이 되었습니다.",
+        "note": "광활하게 펼쳐진 캘리포니아의 건조한 대지와 흐린 하늘 아래, 영화 속 끝없는 추적과 절망의 여정이 겹쳐지는 곳이다. 황량한 풍경 속에 서면 영화가 남긴 무거운 여운이 조용히 되살아난다.",
         "coord": {
           "lat": 37,
           "lng": -120
         },
         "stillUrl": "https://image.tmdb.org/t/p/w1280/i5H7zusQGsysGQ8i6P361Vnr0n2.jpg",
         "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/ISS031-E-115354_-_View_of_Earth.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "catch-me-if-you-can",
+    "title": "Catch Me If You Can",
+    "year": 2002,
+    "director": "Steven Spielberg",
+    "tmdbId": 640,
+    "scenes": [
+      {
+        "id": "catch-me-if-you-can-new-york-city",
+        "name": "New York City",
+        "note": "뉴욕 시내 어딘가, 바쁘게 오가는 군중 속에서 누군가는 자신을 숨기고 또 다른 누군가는 그 흔적을 쫓는다. 이 도시의 익명성과 속도감이 영화 속 숨막히는 추격의 분위기를 그대로 품고 있다.",
+        "coord": {
+          "lat": 40.712777777,
+          "lng": -74.006111111
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/ggC3Brchf4RqPitEh7cROFoeAWn.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Pr._Dr._Pavel_VULCAN_%3B_DIPLOMA_OF_THE_NEW_YORK_ACADEMY_OF_SCIENCES.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "catch-me-if-you-can-paris",
+        "name": "Paris",
+        "note": "스필버그 감독이 파리의 고전적인 거리와 카페 풍경을 배경으로 쫓고 쫓기는 긴장감을 담아낸 도시. 오스만 양식의 건물들과 센 강변을 걷다 보면, 화면 속 주인공처럼 이 도시 어딘가로 사라져버리고 싶은 기묘한 자유로움이 느껴진다.",
+        "coord": {
+          "lat": 48.856666666,
+          "lng": 2.352222222
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/dc8Sr1mCiyGXsdVcah3Ot9ff4w9.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Antique_carrousel_in_Parc_Monceau%2C_Paris_2012.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "catch-me-if-you-can-california",
+        "name": "California",
+        "note": "광활한 캘리포니아의 풍경은 끊임없이 도망치고 또 쫓기는 긴장감을 자연스럽게 품고 있어, 이 땅 위에 서면 어딘가로 사라지고 싶은 충동과 자유로움이 동시에 느껴진다.",
+        "coord": {
+          "lat": 37,
+          "lng": -120
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/eS3xZQ1C8lt6mm4K5lTmjbYn2HE.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/ISS031-E-115354_-_View_of_Earth.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "catch-me-if-you-can-montreal",
+        "name": "Montreal",
+        "note": "몬트리올의 도심 거리는 영화 속 추격과 도주의 긴장감을 고스란히 간직한 듯, 오래된 건물들과 현대적 풍경이 뒤섞인 채 여행자를 맞이한다. 이 도시의 골목을 걷다 보면, 누군가를 피해 끊임없이 달아나던 인물의 숨 가쁜 발걸음이 자연스레 떠오른다.",
+        "coord": {
+          "lat": 45.5033426,
+          "lng": -73.5868411
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/rwcEaZghpbt6mV0lRQ9ymz5oM9B.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Montr%C3%A9al_depuis_le_Mont_Royal.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "catch-me-if-you-can-florida",
+        "name": "Florida",
+        "note": "플로리다의 따사로운 햇살 아래 펼쳐진 이 풍경은, 영화 속 주인공이 쫓기면서도 자유롭게 누볐던 미국의 일상적 공간을 떠올리게 한다. 탁 트인 하늘과 평온한 거리 사이에서, 누군가의 화려한 도주가 시작되었을지도 모른다는 상상이 자연스럽게 피어오른다.",
+        "coord": {
+          "lat": 28.133333333,
+          "lng": -81.631666666
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/Ag6qhzsJd3k1NKuNrG9RmhZDMh7.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Haines_City_-_panoramio.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "catch-me-if-you-can-atlanta",
+        "name": "Atlanta",
+        "note": "스필버그 감독의 영화 속 추격전 일부가 촬영된 애틀랜타의 거리는, 1960년대 미국 도시의 활기와 긴장감을 오늘날에도 은근히 품고 있다. 이 도시의 공항과 번화가를 걷다 보면, 끊임없이 도망치던 그 인물의 숨결이 느껴지는 듯하다.",
+        "coord": {
+          "lat": 33.754444444,
+          "lng": -84.389722222
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/z8cdtRlW9KvZebK5HXm5lOSoVwt.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Underground_Atlanta_lower_level_%2832887073855%29.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "catch-me-if-you-can-ambassador-hotel",
+        "name": "Ambassador Hotel",
+        "note": "한때 할리우드 황금기를 수놓던 앰배서더 호텔의 자리에 서면, 화려했던 로비와 복도의 잔상이 아른거린다. 영화 속 주인공이 누군가를 따돌리듯 스쳐 지나갔을 법한 공간의 긴장감이 지금도 이 거리 어딘가에 남아 있는 듯하다.",
+        "coord": {
+          "lat": 34.059722222,
+          "lng": -118.297222222
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/v6xZRHhkRAuS5PS7PWiTy965Ril.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/The_Writers_First_Annual_Cramp_-_detail.png",
         "bearing": 0
       }
     ]
