@@ -1,17 +1,23 @@
 [
   {
-    "id": "cmbyn",
-    "title": "Call Me By Your Name",
+    "id": "call-me-by-your-name",
+    "title": "Call Me by Your Name",
     "year": 2017,
     "director": "Luca Guadagnino",
     "tmdbId": 398818,
     "scenes": [
-      { "id": "cmbyn-piazza", "name": "Piazza Duomo, Crema", "note": "엘리오와 올리버가 광장을 가로지르던 아침", "coord": { "lat": 45.3628, "lng": 9.6859 }, "stillUrl": "https://picsum.photos/seed/cmbyn-film1/1200/750", "nowUrl": "https://picsum.photos/seed/cmbyn-now1/1200/750", "bearing": 120 },
-      { "id": "cmbyn-fountain", "name": "Fontana di Crema", "note": "둘이 처음 함께 멈춰 섰던 분수", "coord": { "lat": 45.3631, "lng": 9.6866 }, "stillUrl": "https://picsum.photos/seed/cmbyn-film2/1200/750", "nowUrl": "https://picsum.photos/seed/cmbyn-now2/1200/750", "bearing": 200 },
-      { "id": "cmbyn-villa", "name": "Villa Albergoni, Moscazzano", "note": "여름을 보낸 그 별장", "coord": { "lat": 45.3389, "lng": 9.6711 }, "stillUrl": "https://picsum.photos/seed/cmbyn-film3/1200/750", "nowUrl": "https://picsum.photos/seed/cmbyn-now3/1200/750", "bearing": 75 },
-      { "id": "cmbyn-river", "name": "Fontanile Quarantina", "note": "강가에서의 오후", "coord": { "lat": 45.3512, "lng": 9.6420 }, "stillUrl": "https://picsum.photos/seed/cmbyn-film4/1200/750", "nowUrl": "https://picsum.photos/seed/cmbyn-now4/1200/750", "bearing": 310 },
-      { "id": "cmbyn-station", "name": "Stazione di Crema", "note": "올리버를 떠나보낸 역", "coord": { "lat": 45.3567, "lng": 9.6938 }, "stillUrl": "https://picsum.photos/seed/cmbyn-film5/1200/750", "nowUrl": "https://picsum.photos/seed/cmbyn-now5/1200/750", "bearing": 90 },
-      { "id": "cmbyn-bergamo", "name": "Bergamo Alta", "note": "둘이 자전거로 떠난 당일치기", "coord": { "lat": 45.7038, "lng": 9.6614 }, "stillUrl": "https://picsum.photos/seed/cmbyn-film6/1200/750", "nowUrl": "https://picsum.photos/seed/cmbyn-now6/1200/750", "bearing": 150 }
+      {
+        "id": "call-me-by-your-name-moscazzano",
+        "name": "Moscazzano",
+        "note": "엘리오와 올리버가 이탈리아 롬바르디아의 시골 저택 정원에서 처음 만나 서로를 인식하게 되는 설렘 가득한 장면이 펼쳐지는 영화의 심장부이자, 두 청년의 운명적인 만남이 시작되는 마법 같은 공간이다.",
+        "coord": {
+          "lat": 45.283333333,
+          "lng": 9.683333333
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/zvOJawrnmgK0sL293mOXOdLvTXQ.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Moscazzano_-_villa_Albergoni.jpg",
+        "bearing": 0
+      }
     ]
   },
   {
@@ -21,8 +27,18 @@
     "director": "Richard Linklater",
     "tmdbId": 76,
     "scenes": [
-      { "id": "bs-prater", "name": "Wiener Riesenrad, Prater", "note": "관람차 안에서의 첫 키스", "coord": { "lat": 48.2165, "lng": 16.3958 }, "stillUrl": "https://picsum.photos/seed/bs-film1/1200/750", "nowUrl": "https://picsum.photos/seed/bs-now1/1200/750", "bearing": 45 },
-      { "id": "bs-cafe", "name": "Café Sperl", "note": "전화 흉내를 내던 카페", "coord": { "lat": 48.1987, "lng": 16.3636 }, "stillUrl": "https://picsum.photos/seed/bs-film2/1200/750", "nowUrl": "https://picsum.photos/seed/bs-now2/1200/750", "bearing": 270 }
+      {
+        "id": "before-sunrise-vienna",
+        "name": "Vienna",
+        "note": "Jesse와 Céline이 비엔나의 야경 속에서 밤새 산책하며 인생과 사랑에 대해 깊은 대화를 나누는 로맨틱한 장면들이 펼쳐지는 도시",
+        "coord": {
+          "lat": 48.208333333,
+          "lng": 16.3725
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/qA2TyqPldTtoTVY3LKrNIG5g6bH.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Stephansdom_-_panoramio_%282%29.jpg",
+        "bearing": 0
+      }
     ]
   },
   {
@@ -32,8 +48,582 @@
     "director": "Woody Allen",
     "tmdbId": 59436,
     "scenes": [
-      { "id": "mip-steps", "name": "Église Saint-Étienne-du-Mont", "note": "자정에 클래식 푸조가 멈추던 계단", "coord": { "lat": 48.8469, "lng": 2.3486 }, "stillUrl": "https://picsum.photos/seed/mip-film1/1200/750", "nowUrl": "https://picsum.photos/seed/mip-now1/1200/750", "bearing": 30 },
-      { "id": "mip-bridge", "name": "Pont Alexandre III", "note": "빗속을 걷던 다리", "coord": { "lat": 48.8638, "lng": 2.3136 }, "stillUrl": "https://picsum.photos/seed/mip-film2/1200/750", "nowUrl": "https://picsum.photos/seed/mip-now2/1200/750", "bearing": 210 }
+      {
+        "id": "midnight-in-paris-paris",
+        "name": "Paris",
+        "note": "주인공 길이 1920년대 파리로 시간 여행을 떠나는 신비로운 자동차 장면이 펼쳐지는 파리의 야밤 거리로, 과거와 현재가 교차하는 마법 같은 순간을 담아낸 영화의 핵심 배경",
+        "coord": {
+          "lat": 48.856666666,
+          "lng": 2.352222222
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/mBXwAR71sA87whSUuuvtea8Pspi.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Antique_carrousel_in_Parc_Monceau%2C_Paris_2012.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "midnight-in-paris-palace-of-versailles",
+        "name": "Palace of Versailles",
+        "note": "영화의 주인공 길이 1920년대 파리로 시간 여행을 떠나는 마법 같은 순간이 펼쳐지는 베르사유 궁전의 화려한 정원과 궁전 건축물들이 배경이 되어 과거와 현재를 넘나드는 낭만적인 여정의 시작을 장식한다.",
+        "coord": {
+          "lat": 48.804722222,
+          "lng": 2.120277777
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/b5bcKhvN6VP82U5ztNdPfOLiolD.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Palacio_de_Versalles%2C_galer%C3%ADa_con_estatuas.jpg",
+        "bearing": 90
+      },
+      {
+        "id": "midnight-in-paris-giverny",
+        "name": "Giverny",
+        "note": "골 해리슨이 시간 여행으로 1920년대 파리에 도착한 후 인상파 거장들을 만나는 마법 같은 밤의 여정이 시작되는 지베르니의 수련 정원에서, 현실과 꿈의 경계가 아름답게 녹아드는 장면",
+        "coord": {
+          "lat": 49.076111111,
+          "lng": 1.529166666
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/zfJBdbaGYinvwI1ccby1Gi8S9dd.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Giverny_001.jpg",
+        "bearing": 270
+      },
+      {
+        "id": "midnight-in-paris-saint-etienne-du-mont",
+        "name": "Saint-Étienne-du-Mont",
+        "note": "주인공 길이 밤거리를 헤매다가 우연히 발견한 이 고풍스러운 교회에서 과거로의 신비로운 시간 여행이 시작되는 영화의 핵심 무대이자, 파리의 낭만적인 야경이 가장 아름답게 드러나는 장소입니다.",
+        "coord": {
+          "lat": 48.84653,
+          "lng": 2.34803
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/wHhI5aIRnP6d1j8uCeqhuc8HvPr.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Spirale_droite_jub%C3%A9_saint_etienne_du_Mont.jpg",
+        "bearing": 270
+      },
+      {
+        "id": "midnight-in-paris-square-jean-xxiii",
+        "name": "square Jean-XXIII",
+        "note": "노스탤지어에 빠진 주인공이 자정을 넘겨 1920년대 파리로 시간여행을 떠나는 마법같은 순간이 펼쳐지는 노트르담 대성당 앞 광장",
+        "coord": {
+          "lat": 48.8525,
+          "lng": 2.35139
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/sIJTdyF6JFbIz5mENPpeSlCKYyB.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Fontaine_de_l%27Archev%C3%AAch%C3%A9.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "amelie",
+    "title": "Amélie",
+    "year": 2001,
+    "director": "Jean-Pierre Jeunet",
+    "tmdbId": 194,
+    "scenes": [
+      {
+        "id": "amelie-paris",
+        "name": "Paris",
+        "note": "아멜리가 카페 드 플로르에서 혼자만의 상상의 세계에 빠져 있으며, 파리의 몽마르트 언덕에서 도시의 아름다움을 발견하는 신비로운 순간들이 펼쳐지는 장소입니다.",
+        "coord": {
+          "lat": 48.856666666,
+          "lng": 2.352222222
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/6n53UI4mX9QMfe2S0Pgt8mGebY1.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Antique_carrousel_in_Parc_Monceau%2C_Paris_2012.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "amelie-cologne",
+        "name": "Cologne",
+        "note": "라인 강변의 낭만적인 야경과 함께 아멜리의 내적 성장이 시각화되는 독일의 중요한 촬영지",
+        "coord": {
+          "lat": 50.942222222,
+          "lng": 6.957777777
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/9TEUJy5aRP7LaM1LKTfcxVK34JK.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/PulseOfEurope_Cologne_2017-02-19-9914.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "amelie-montmartre",
+        "name": "Montmartre",
+        "note": "아멜리가 카페 데 드 무랑에서 처음 등장하여 파리의 매력적인 몽마르트 거리를 배경으로 자신만의 마법 같은 세상을 펼쳐 보이는 영화의 상징적인 장면이 펼쳐지는 곳입니다.",
+        "coord": {
+          "lat": 48.886944444,
+          "lng": 2.341111111
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/sylBlnpwqI9LAcyw7jH3oqazbAx.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Montmartre_nr_Sacre_Coeur_%285684083027%29.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "amelie-gare-d-ermont-eaubonne",
+        "name": "Gare d'Ermont - Eaubonne",
+        "note": "아멜리가 기차역 플랫폼에서 수줍은 미소로 주변을 관찰하며 파리의 일상 속 마법을 발견하는 장면",
+        "coord": {
+          "lat": 48.980555555,
+          "lng": 2.271666666
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/2WyjkKudTkDgtZo9CIN8NoPGHRB.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Pontoise_%28Val-d%27Oise%29_little_bike_on_bike.JPG",
+        "bearing": 0
+      },
+      {
+        "id": "amelie-porte-des-lilas-cinema",
+        "name": "Porte des Lilas - Cinéma",
+        "note": "아멜리가 혼자만의 세계에 빠져 영화관 앞 광장에서 상상의 나래를 펼치며 몽환적인 표정으로 거리를 거닐던 장면으로, 파리의 소박한 일상 속에서 마법이 시작되는 순간을 보여주는 영화의 상징적인 로케이션입니다.",
+        "coord": {
+          "lat": 48.8873328,
+          "lng": 2.24609213
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/4tqNNLAUY525N5rKGwNQVcuGNzX.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Boulevard_Patrick_Devedjian_-_Puteaux_%28FR92%29_-_2023-09-16_-_3.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "lost-in-translation",
+    "title": "Lost in Translation",
+    "year": 2003,
+    "director": "Sofia Coppola",
+    "tmdbId": 153,
+    "scenes": [
+      {
+        "id": "lost-in-translation-japan",
+        "name": "Japan",
+        "note": "도쿄의 네온으로 빛나는 밤거리에서 톰 크루즈와 스칼렛 조핸슨이 고독하지만 아름다운 우정을 나누며 일본 문화의 낯선 매력 속에 빠져든다.",
+        "coord": {
+          "lat": 35,
+          "lng": 136
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/6ITVHoipvxAS8luzKtHTbPaHLtT.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/ISS040-E-98086_-_View_of_Earth.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "lost-in-translation-tokyo",
+        "name": "Tokyo",
+        "note": "도쿄의 화려한 네온빛이 가득한 신주쿠 거리에서 톰 크루즈와 스칼렛 요한슨이 도시의 고독함과 아름다움을 함께 느끼며 교감하는 장면",
+        "coord": {
+          "lat": 35.689444444,
+          "lng": 139.691666666
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/6BVW7Tk0HvSGZqJ0NCnd2kLCJO3.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/The_Last_Light_Tokyo_Japan_Black_And_White_Photography_%28242749545%29.jpeg",
+        "bearing": 0
+      },
+      {
+        "id": "lost-in-translation-kyoto",
+        "name": "Kyoto",
+        "note": "밤거리를 혼자 걷는 밥 해리스가 교토의 전통 거리에서 일본 문화의 고요함과 고독감을 동시에 느끼며 자신의 내면 세계로 침잠하는 장면",
+        "coord": {
+          "lat": 35.011611111,
+          "lng": 135.768111111
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/45He7gApNQyDbqCDjxew9BnHzjf.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Kyoto_City_Government_-_panoramio.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "la-la-land",
+    "title": "La La Land",
+    "year": 2016,
+    "director": "Damien Chazelle",
+    "tmdbId": 313369,
+    "scenes": [
+      {
+        "id": "la-la-land-los-angeles",
+        "name": "Los Angeles",
+        "note": "세바스찬과 미아가 그리피스 천문대 위에서 밤하늘을 바라보며 꿈을 나누는 로맨틱한 장면이 펼쳐지는 로스앤젤레스의 심장부입니다.",
+        "coord": {
+          "lat": 34.05223,
+          "lng": -118.24368
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/nlPCdZlHtRNcF6C9hzUH4ebmV1w.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/LA_Chinatown_2011_-_panoramio_%2815%29.jpg",
+        "bearing": 270
+      },
+      {
+        "id": "la-la-land-long-beach",
+        "name": "Long Beach",
+        "note": "라라랜드에서 세바스찬과 미아가 롱비치의 야경을 배경으로 재즈 클럽에서 만나 운명적인 첫 만남을 나누는 감동적인 장면이 펼쳐지는 곳입니다.",
+        "coord": {
+          "lat": 33.768055555,
+          "lng": -118.195555555
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/2wmDyHz4gvF6m51IQZJnJzlLsnz.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Long_Beach_Hooters_-_panoramio.jpg",
+        "bearing": 180
+      },
+      {
+        "id": "la-la-land-griffith-observatory",
+        "name": "Griffith Observatory",
+        "note": "미아와 세바스찬이 LA의 야경을 배경으로 춤을 추며 사랑을 확인하는 영화의 가장 낭만적인 장면이 촬영된 천문대",
+        "coord": {
+          "lat": 34.118561111,
+          "lng": -118.300369444
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/rVRtRE6HJ5xbdo5jd9aTT8tEVaF.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Los_Angeles_Downtown_%2819510159%29.jpeg",
+        "bearing": 270
+      }
+    ]
+  },
+  {
+    "id": "the-grand-budapest-hotel",
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "director": "Wes Anderson",
+    "tmdbId": 120467,
+    "scenes": [
+      {
+        "id": "the-grand-budapest-hotel-germany",
+        "name": "Germany",
+        "note": "그랜드 부다페스트 호텔의 중부 유럽 배경이 되는 독일의 광활한 풍경에서 영화의 우아하고 몽환적인 미학이 완성되었습니다.",
+        "coord": {
+          "lat": 51,
+          "lng": 10
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/9udCLTxTFl28RxnK8Q05E154ZGa.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/ISS066-E-184321_-_View_of_Earth.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "the-grand-budapest-hotel-krakow",
+        "name": "Kraków",
+        "note": "그랜드 부다페스트 호텔의 화려한 외관과 유럽의 우아한 건축물들이 어우러진 크라쿠프의 역사적 거리에서 웨스 앤더슨 감독의 독특한 색감과 대칭 미학이 돋보이는 장면들이 촬영되었습니다.",
+        "coord": {
+          "lat": 50.061388888,
+          "lng": 19.937222222
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/xHDynIimfsgj0ZOs0j5ma8v1vmM.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Main_Market_Square%2C_view_from_S%2C_Old_Town%2C_Krak%C3%B3w%2C_Poland.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "cinema-paradiso",
+    "title": "Cinema Paradiso",
+    "year": 1988,
+    "director": "Giuseppe Tornatore",
+    "tmdbId": 11216,
+    "scenes": [
+      {
+        "id": "cinema-paradiso-sicily",
+        "name": "Sicily",
+        "note": "시실리의 작은 해안 마을에서 늙은 영사와 소년 살바토레가 영화관의 추억 속에서 만나 영화 필름의 키스 장면들을 함께 보며 인생과 사랑의 본질을 깨닫는 감동적인 장면",
+        "coord": {
+          "lat": 37.6,
+          "lng": 14.016666666
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/zoVeIgKzGJzpdG6Gwnr7iOYfIMU.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Temple_De_La_Concorde_%28135021551%29.jpeg",
+        "bearing": 180
+      },
+      {
+        "id": "cinema-paradiso-palermo",
+        "name": "Palermo",
+        "note": "팔레르모의 좁은 골목과 오래된 건축물들이 영화 속 시네마 파라디소의 추억 어린 분위기를 완벽하게 담아내며, 주인공이 영사실에서 내려와 도시의 거리를 거닐며 과거의 기억 속으로 빠져드는 장면의 무대가 되었습니다.",
+        "coord": {
+          "lat": 38.115658055,
+          "lng": 13.361261944
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/LQbept4Ix8zlv1BtUhwSpOeImb.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Palermo_%28259853507%29.jpeg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "roman-holiday",
+    "title": "Roman Holiday",
+    "year": 1953,
+    "director": "William Wyler",
+    "tmdbId": 804,
+    "scenes": [
+      {
+        "id": "roman-holiday-rome",
+        "name": "Rome",
+        "note": "공주 앤이 기자 조 브래들리와 로마의 거리를 누비며 자유로움을 만끽하는 영화의 하이라이트 장면들이 펼쳐지는 영원한 도시의 심장부",
+        "coord": {
+          "lat": 41.893055555,
+          "lng": 12.482777777
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/8LOZsJs8w7yRKsT21oPYupk9xaR.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ragazza-EFFECTS.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "in-the-mood-for-love",
+    "title": "In the Mood for Love",
+    "year": 2000,
+    "director": "Wong Kar-Wai",
+    "tmdbId": 843,
+    "scenes": [
+      {
+        "id": "in-the-mood-for-love-macau",
+        "name": "Macau",
+        "note": "좁은 골목의 붉은 벽과 초록색 셔터 사이로 두 주인공이 스쳐 지나가며 억압된 감정을 드러내는 영화의 상징적 장면이 촬영된 마카오의 포르투갈식 건축물들이 시간을 멈춘 듯 서 있다.",
+        "coord": {
+          "lat": 22.19,
+          "lng": 113.538055555
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/ffQFnAUm2Uu4RU0nijpjPRf9TBT.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Macau_Government_Headquarters_open_day_21-10-2023%2856%29.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "panic-room",
+    "title": "Panic Room",
+    "year": 2002,
+    "director": "David Fincher",
+    "tmdbId": 4547,
+    "scenes": [
+      {
+        "id": "panic-room-new-york-city",
+        "name": "New York City",
+        "note": "뉴욕의 맨해튼 고급 주택가에서 엄마와 딸이 침입자들로부터 숨어 긴장감 넘치는 사투를 벌이는 장면들이 촬영된 도시입니다.",
+        "coord": {
+          "lat": 40.712777777,
+          "lng": -74.006111111
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/gJfd2SzUsvY1q1iszthJ3ryuvEA.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Pr._Dr._Pavel_VULCAN_%3B_DIPLOMA_OF_THE_NEW_YORK_ACADEMY_OF_SCIENCES.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "panic-room-los-angeles",
+        "name": "Los Angeles",
+        "note": "조애나 일리노스키가 방음 처리된 공황실에 갇혀 외부 침입자들로부터 가족을 지키기 위해 지혜와 용기로 맞서는 긴장감 넘치는 심리 스릴러의 무대가 된 현대적 맨션.",
+        "coord": {
+          "lat": 34.05223,
+          "lng": -118.24368
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/9G5bteYI8FXaY9EomnUP0kdHm66.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/LA_Chinatown_2011_-_panoramio_%2815%29.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "mamma-mia",
+    "title": "Mamma Mia!",
+    "year": 2008,
+    "director": "Phyllida Lloyd",
+    "tmdbId": 11631,
+    "scenes": [
+      {
+        "id": "mamma-mia-lloyd-s-building",
+        "name": "Lloyd's building",
+        "note": "런던 금융가의 상징적 건축물 Lloyd's Building은 영화에서 Sophie가 결혼식을 준비하며 런던의 현대적 활력을 표현하는 배경으로 등장합니다.",
+        "coord": {
+          "lat": 51.513055555,
+          "lng": -0.0825
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/85BQpS3lEA7wESlGUCFQZNoPoo8.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Lloyd%27s_Building_Elevators.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "mamma-mia-skopelos",
+        "name": "Skopelos",
+        "note": "소피와 그녀의 세 아버지가 하얀 교회 종탑 앞에서 합창하며, 에게 해의 푸른 수평선을 배경으로 ABBA의 감정적인 클라이맥스 장면이 펼쳐지는 장소입니다.",
+        "coord": {
+          "lat": 39.122,
+          "lng": 23.727
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/90sDsHugeRU5dtTG3zEVIOXXl4L.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Sunset_%28132643597%29.jpeg",
+        "bearing": 180
+      },
+      {
+        "id": "mamma-mia-buckinghamshire",
+        "name": "Buckinghamshire",
+        "note": "그리스 섬의 목가적인 풍경으로 위장된 영국 버킹엄셔의 우아한 저택에서 ABBA의 명곡들이 울려 퍼지는 가운데 소피와 그녀의 어머니 도나가 감정적인 재회를 나누는 장면이 펼쳐진다.",
+        "coord": {
+          "lat": 51.828022246,
+          "lng": -0.790425894
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/8IGO8rF5asa7tnO0aEtx3e5R4Z5.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/A418_Aylesbury_Road%2C_Bierton_-_geograph.org.uk_-_6340910.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "back-to-the-future",
+    "title": "Back to the Future",
+    "year": 1985,
+    "director": "Robert Zemeckis",
+    "tmdbId": 105,
+    "scenes": [
+      {
+        "id": "back-to-the-future-los-angeles",
+        "name": "Los Angeles",
+        "note": "마티가 타임머신 개조 DeLorean을 처음 타고 1955년으로 시간 여행을 떠나는 로스앤젤레스의 상징적인 거리 장면이 촬영된 곳입니다.",
+        "coord": {
+          "lat": 34.05223,
+          "lng": -118.24368
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/5bzPWQ2dFUl2aZKkp7ILJVVkRed.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/LA_Chinatown_2011_-_panoramio_%2815%29.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "back-to-the-future-gamble-house",
+        "name": "Gamble House",
+        "note": "마티 맥플라이가 1985년에서 1955년으로 시간 여행을 떠나기 전, 닥터 에밋 브라운과 함께 시간 여행 계획을 세우던 저택의 외부 장면이 촬영된 곳입니다.",
+        "coord": {
+          "lat": 34.151561,
+          "lng": -118.1608
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/2H2YYbn8wDzYXtak83Md6PAwMdp.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/California_Landmark_No._871_The_Gamble_House_-_panoramio_%283%29.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "the-silence-of-the-lambs",
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "director": "Jonathan Demme",
+    "tmdbId": 274,
+    "scenes": [
+      {
+        "id": "the-silence-of-the-lambs-pittsburgh",
+        "name": "Pittsburgh",
+        "note": "FBI 신입 요원 클래리스가 연쇄살인범의 흔적을 추적하며 피츠버그의 어두운 골목과 산업 지역을 누비는 긴장감 넘치는 장면들이 촬영된 곳입니다.",
+        "coord": {
+          "lat": 40.441666666,
+          "lng": -80
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/aYcnDyLMnpKce1FOYUpZrXtgUye.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Wood_Street_station_2023_%282%29.png",
+        "bearing": 0
+      },
+      {
+        "id": "the-silence-of-the-lambs-bimini",
+        "name": "Bimini",
+        "note": "이 장소는 실제로 영화 촬영지가 아니며, 영화 '양들의 침묵'은 필라델피아, 웨스트버지니아, 노스캐롤라이나 등 미국 동부에서 촬영되었습니다.",
+        "coord": {
+          "lat": 25.733333333,
+          "lng": -79.25
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/lDJx0ZKbfYbGoe8mwWmVKSQr0ub.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Flickr_-_Per_Ola_Wiberg_~_mostly_away_-_business_going_on_I_suppose.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "the-silence-of-the-lambs-carnegie-museum-of-natural-history",
+        "name": "Carnegie Museum of Natural History",
+        "note": "FBI 훈련생 클래리스가 연쇄살인범의 단서를 찾기 위해 박물관의 곤충 표본실을 방문하여 범인의 심리를 파악하는 긴장감 넘치는 장면이 촬영된 곳입니다.",
+        "coord": {
+          "lat": 40.443611111,
+          "lng": -79.95
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/5EqT0WyG7yYs8v7GdoS4R9P75Gz.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sequoya_alphabet.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "the-silence-of-the-lambs-pittsburgh-international-airport",
+        "name": "Pittsburgh International Airport",
+        "note": "FBI 요원들이 연쇄살인범을 추적하기 위해 공항에서 용의자를 감시하는 긴장감 넘치는 장면이 촬영된 곳으로, 영화의 클라이맥스를 향한 중요한 전환점이 되었습니다.",
+        "coord": {
+          "lat": 40.495997,
+          "lng": -80.256693
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/pI9B4wppGflpsOD2T6rxgC5Clmz.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Gratuitous_airport_terminal_pic_%2814295677747%29.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "the-silence-of-the-lambs-south-bimini-airport",
+        "name": "South Bimini Airport",
+        "note": "FBI 요원 클라리스가 직렬살인범 버팔로 빌을 추적하기 위해 도착한 바이미 섬의 작은 공항으로, 영화의 긴장감 넘치는 클라이맥스를 향한 발걸음이 시작되는 장소입니다.",
+        "coord": {
+          "lat": 25.7,
+          "lng": -79.264722222
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/dO3q2FUDSi5qwi9eKMF2FWm5lSQ.jpg",
+        "nowUrl": "https://image.tmdb.org/t/p/w1280/dO3q2FUDSi5qwi9eKMF2FWm5lSQ.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "the-silence-of-the-lambs-south-bimini-airport-2",
+        "name": "South Bimini Airport",
+        "note": "FBI 요원들이 연쇄살인범을 추적하기 위해 플로리다의 외딴 공항에 도착하는 긴장감 넘치는 장면이 펼쳐지는 곳입니다.",
+        "coord": {
+          "lat": 25.7,
+          "lng": -79.263333
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/jEB8ILifjm2C4mOBOeTZNN4UNiF.jpg",
+        "nowUrl": "https://image.tmdb.org/t/p/w1280/jEB8ILifjm2C4mOBOeTZNN4UNiF.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "the-silence-of-the-lambs-fbi-academy",
+        "name": "FBI Academy",
+        "note": "FBI 아카데미에서 클라리스 스탠링이 행동 분석 교관 잭 크로포드를 만나 한니발 렉터의 심리 프로필을 받는 장면이 촬영된 곳으로, 영화의 핵심적인 수사 기초가 마련되는 상징적 공간입니다.",
+        "coord": {
+          "lat": 38.530219444,
+          "lng": -77.445927777
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/mbOx1wxMLikzwWUO9TKAcFIy6op.jpg",
+        "nowUrl": "https://image.tmdb.org/t/p/w1280/mbOx1wxMLikzwWUO9TKAcFIy6op.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "the-silence-of-the-lambs-old-allegheny-county-jail",
+        "name": "Old Allegheny County Jail",
+        "note": "FBI 훈련생 클래리스가 사이코패스 연쇄살인범 버팔로 빌의 정보를 얻기 위해 수감 중인 천재 정신과 의사이자 살인마 한니발 렉터를 찾아가 긴장감 넘치는 대면을 나누는 감옥의 침울한 복도 장면이 촬영되었던 곳입니다.",
+        "coord": {
+          "lat": 40.438472222,
+          "lng": -79.995527777
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/mW2hISHs00yihyYQBqahGYoCcHy.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Bridge%2Bof%2BSighs%2B1903.jpg",
+        "bearing": 0
+      },
+      {
+        "id": "the-silence-of-the-lambs-layton",
+        "name": "Layton",
+        "note": "FBI 요원 클래리스가 살인마의 집을 찾기 위해 지역을 수색하며 긴장감 넘치는 추적 장면이 펼쳐지는 펜실베니아의 작은 마을",
+        "coord": {
+          "lat": 40.09,
+          "lng": -79.722777777
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/aYcnDyLMnpKce1FOYUpZrXtgUye.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/GAP_Milepost_102_near_Layton_bridge_%2849728694903%29.jpg",
+        "bearing": 0
+      }
+    ]
+  },
+  {
+    "id": "se7en",
+    "title": "Se7en",
+    "year": 1995,
+    "director": "David Fincher",
+    "tmdbId": 807,
+    "scenes": [
+      {
+        "id": "se7en-california",
+        "name": "California",
+        "note": "경찰서 외부 및 도시 곳곳에서 일어난 연쇄살인 사건의 수사 장면들이 촬영된 캘리포니아의 황량한 산업지역으로, 영화의 어두운 분위기를 극적으로 표현하는 배경이 되었습니다.",
+        "coord": {
+          "lat": 37,
+          "lng": -120
+        },
+        "stillUrl": "https://image.tmdb.org/t/p/w1280/i5H7zusQGsysGQ8i6P361Vnr0n2.jpg",
+        "nowUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/ISS031-E-115354_-_View_of_Earth.jpg",
+        "bearing": 0
+      }
     ]
   }
 ]
