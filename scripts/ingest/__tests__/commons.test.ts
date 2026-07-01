@@ -33,7 +33,7 @@ describe("parseImageInfo", () => {
 describe("buildImageInfoUrl", () => {
   it("embeds the title and iiprop=url", () => {
     const u = buildImageInfoUrl("File:Crema.jpg");
-    expect(u).toContain("Crema");
+    expect(u).toContain("Crema.jpg");
     expect(u).toContain("iiprop=url");
   });
 });

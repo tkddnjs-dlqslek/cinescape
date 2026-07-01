@@ -1,5 +1,6 @@
 { "query": { "geosearch": [
   { "title": "File:Crema.jpg", "lat": 45.3628, "lon": 9.6859, "dist": 20 },
   { "title": "File:Crema map.svg", "lat": 45.3629, "lon": 9.6860, "dist": 40 },
-  { "title": "File:Piazza Duomo Crema.jpeg", "lat": 45.3630, "lon": 9.6861, "dist": 55 }
+  { "title": "File:Piazza Duomo Crema.jpeg", "lat": 45.3630, "lon": 9.6861, "dist": 55 },
+  { "title": "File:Crema.tif", "lat": 45.3631, "lon": 9.6862, "dist": 60 }
 ] } }

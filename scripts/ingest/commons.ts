@@ -37,13 +37,17 @@ export function parseImageInfo(json: unknown): string | null {
 export function makeCommonsFetcher(fetchFn: typeof fetch = fetch): NowPhotoFetcher {
   return {
     async now(loc: RawLocation): Promise<string | null> {
-      const geoRes = await fetchFn(buildGeosearchUrl(loc.lat, loc.lng), { headers: { "User-Agent": UA } });
-      if (!geoRes.ok) return null;
-      const titles = parseGeosearch(await geoRes.json());
-      if (titles.length === 0) return null;
-      const infoRes = await fetchFn(buildImageInfoUrl(titles[0]), { headers: { "User-Agent": UA } });
-      if (!infoRes.ok) return null;
-      return parseImageInfo(await infoRes.json());
+      try {
+        const geoRes = await fetchFn(buildGeosearchUrl(loc.lat, loc.lng), { headers: { "User-Agent": UA } });
+        if (!geoRes.ok) return null;
+        const titles = parseGeosearch(await geoRes.json());
+        if (titles.length === 0) return null;
+        const infoRes = await fetchFn(buildImageInfoUrl(titles[0]), { headers: { "User-Agent": UA } });
+        if (!infoRes.ok) return null;
+        return parseImageInfo(await infoRes.json());
+      } catch {
+        return null;
+      }
     },
   };
 }
