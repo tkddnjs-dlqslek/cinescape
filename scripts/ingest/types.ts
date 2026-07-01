@@ -7,6 +7,7 @@ export type TaggedScene = { name: string; note: string; bearing: number };
 export interface WikidataFetcher { locations(tmdbId: number): Promise<RawLocation[]> }
 export interface TmdbFetcher { meta(tmdbId: number): Promise<FilmMeta> }
 export interface SceneTagger { tag(filmTitle: string, loc: RawLocation): Promise<TaggedScene> }
+export interface NowPhotoFetcher { now(loc: RawLocation): Promise<string | null> }
 
 export type { Scene, Film };
 
