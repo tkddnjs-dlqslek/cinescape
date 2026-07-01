@@ -14,7 +14,7 @@ export function SearchBar({
   const results = query.trim() === "" ? [] : searchFilms(films, query);
 
   return (
-    <div style={{ position: "relative", width: 360 }}>
+    <div style={{ position: "relative", width: "min(360px, calc(100vw - 150px))" }}>
       <div
         style={{
           display: "flex", alignItems: "center", gap: 11,

@@ -7,7 +7,9 @@ export function ScenePanel({ film, scene }: { film: Film; scene: Scene }) {
   return (
     <aside
       style={{
-        position: "fixed", right: 40, top: 104, width: 400, borderRadius: 22, zIndex: 35, overflow: "hidden",
+        position: "fixed", right: "clamp(12px, 3vw, 40px)", top: 104,
+        width: "min(400px, calc(100vw - 24px))", maxHeight: "calc(100dvh - 124px)",
+        borderRadius: 22, zIndex: 35, overflowX: "hidden", overflowY: "auto",
         background: "var(--panel-bg)",
         border: "1px solid var(--line)", backdropFilter: "blur(26px)",
         boxShadow: "var(--shadow-panel)",

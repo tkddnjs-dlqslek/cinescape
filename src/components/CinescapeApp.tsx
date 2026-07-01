@@ -38,7 +38,7 @@ export function CinescapeApp() {
         style={{
           position: "fixed", top: 0, left: 0, right: 0, height: 80,
           display: "flex", alignItems: "center", justifyContent: "space-between",
-          padding: "0 40px", zIndex: 30,
+          padding: "0 clamp(16px, 4vw, 40px)", zIndex: 30,
         }}
       >
         <div style={{ fontSize: 18, fontWeight: 700, letterSpacing: ".18em" }}>
