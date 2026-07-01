@@ -11,6 +11,7 @@ export function assembleFilm(
   meta: FilmMeta,
   locations: RawLocation[],
   tags: TaggedScene[],
+  nowUrls?: (string | null)[],
 ): Film {
   const filmId = makeFilmId(meta.title);
   const stills = meta.stillUrls.length > 0 ? meta.stillUrls : [PLACEHOLDER_STILL];
@@ -18,6 +19,7 @@ export function assembleFilm(
   const scenes: Scene[] = locations.map((loc, i) => {
     const tag = tags[i] ?? { name: loc.name, note: "", bearing: 0 };
     const stillUrl = stills[i % stills.length];
+    const nowUrl = nowUrls?.[i] ?? stillUrl; // real Commons photo if found, else placeholder
     let id = `${filmId}-${slug(loc.name)}`;
     if (usedIds.has(id)) {
       let n = 2;
@@ -31,7 +33,7 @@ export function assembleFilm(
       note: tag.note,
       coord: { lat: loc.lat, lng: loc.lng },
       stillUrl,
-      nowUrl: stillUrl, // placeholder — flagged for manual replacement (Global Constraints)
+      nowUrl,
       bearing: tag.bearing,
     };
   });

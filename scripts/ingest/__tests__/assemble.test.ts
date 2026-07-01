@@ -74,4 +74,10 @@ describe("assembleFilm", () => {
     expect(film.scenes[1].note).toBe("");
     expect(film.scenes[1].bearing).toBe(0);
   });
+
+  it("uses provided nowUrls when present, placeholder otherwise", () => {
+    const film = assembleFilm(meta, locs, tags, ["https://upload.wikimedia.org/x.jpg", null]);
+    expect(film.scenes[0].nowUrl).toBe("https://upload.wikimedia.org/x.jpg");
+    expect(film.scenes[1].nowUrl).toBe(film.scenes[1].stillUrl); // null → placeholder
+  });
 });

@@ -5,10 +5,9 @@ import { parseFilms, type Film } from "@/lib/types";
 import { makeWikidataFetcher } from "./wikidata";
 import { makeTmdbFetcher } from "./tmdb";
 import { makeSceneTagger } from "./sceneTagger";
+import { makeCommonsFetcher } from "./commons";
 import { assembleFilm } from "./assemble";
 import { mergeFilms } from "./merge";
-
-const PLACEHOLDER_STILL = "https://picsum.photos/seed/cinescape-placeholder/1200/750";
 
 async function main() {
   const arg = process.argv.indexOf("--tmdb");
@@ -27,6 +26,7 @@ async function main() {
   const wiki = makeWikidataFetcher();
   const tmdb = makeTmdbFetcher(tmdbKey);
   const tagger = makeSceneTagger(new Anthropic({ apiKey: anthropicKey }));
+  const commons = makeCommonsFetcher();
 
   console.log(`[ingest] tmdb=${tmdbId}: fetching locations + meta...`);
   const [locations, meta] = await Promise.all([wiki.locations(tmdbId), tmdb.meta(tmdbId)]);
@@ -46,8 +46,14 @@ async function main() {
     }
   }
 
-  const film = assembleFilm(meta, locations, tags);
-  const placeholderNow = film.scenes.filter((s) => s.nowUrl === s.stillUrl || s.nowUrl === PLACEHOLDER_STILL).length;
+  const nowUrls: (string | null)[] = [];
+  for (const loc of locations) {
+    try { nowUrls.push(await commons.now(loc)); }
+    catch (e) { console.warn(`[ingest] now-photo failed for "${loc.name}": ${e}`); nowUrls.push(null); }
+  }
+
+  const film = assembleFilm(meta, locations, tags, nowUrls);
+  const placeholderNow = film.scenes.filter((s) => s.nowUrl === s.stillUrl).length;
 
   if (meta.director === "Unknown" || meta.year === 0) {
     console.warn(`[ingest] ⚠ needsManualReview: director="${meta.director}" year=${meta.year} — check TMDB metadata for tmdb=${tmdbId}.`);
